@@ -1,6 +1,11 @@
 # HSTrackerPro
 Hearthstone Deck tracker for OSX
 
+Screenshots:
+
+![Tracker1](http://i.imgur.com/OwRKpNl.png "Tracking played card")
+
+![Tracker2](http://i.imgur.com/r2rqqMT.png "Highlight cards")
 
 # SETUP
 1. Logging needs to be enabled in Hearthstone in order for deck tracking to work.
