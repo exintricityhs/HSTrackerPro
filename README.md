@@ -42,7 +42,7 @@ a text file.
 ===========
 1. Please report all bugs to: exintricityhs@gmail.com
 
-Donations appreciated: [![PayPal](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=Z3GZRVDGW3NKN)
+Donations appreciated: [![PayPal](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=Z3GZRVDGW3NKN&lc=US&item_name=EXintricity&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted)
 
 # FAQ
 ===========
