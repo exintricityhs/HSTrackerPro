@@ -26,20 +26,20 @@ a text file.
 - See the examples in the /decks folder
 
 # USAGE
-1. HSTrackerPro needs to be loaded with a deck open prior to starting a match.
+- HSTrackerPro needs to be loaded with a deck open prior to starting a match.
 
 - HSTrackerPro does not need to be started prior to starting Hearthstone.
 
-2. To open a deck, go to the FILE menu and choose open.
+- To open a deck, go to the FILE menu and choose open.
 
 - Then select the text file containing your deck.
 
-3. HSTrackerPro automatically tracks the following:
+- HSTrackerPro automatically tracks the following:
 
-- Cards from your deck into your hand.
-- Cards played by your opponent.
+    - Cards from your deck into your hand.
+    - Cards played by your opponent.
 
-4. The SELF and OPPONENT tracking will automatically be reset at the start of a new match.
+- The SELF and OPPONENT tracking will automatically be reset at the start of a new match.
 
 # COMING SOON
 1. Display 2+ correctly.
