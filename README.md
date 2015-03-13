@@ -27,10 +27,10 @@ a text file.
 
 # USAGE
 1. HSTrackerPro needs to be loaded with a deck open prior to starting a match.
-(a) HSTrackerPro does not need to be started prior to starting Hearthstone.
+- HSTrackerPro does not need to be started prior to starting Hearthstone.
 
 2. To open a deck, go to the FILE menu and choose open.
-(a) Then select the text file containing your deck.
+- Then select the text file containing your deck.
 
 3. HSTrackerPro automatically tracks the following:
 
@@ -39,8 +39,12 @@ a text file.
 
 2. The SELF and OPPONENT tracking will automatically be reset at the start of a new match.
 
+# COMING SOON
+1. Display 2+ correctly.
+2. Window alpha controls
+
 # BUGS
-1. Please report all bugs to: exintricityhs@gmail.com
+Feel free to report bugs to: exintricityhs@gmail.com
 
 Donations appreciated: [![PayPal](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=Z3GZRVDGW3NKN&lc=US&item_name=EXintricity&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted)
 
