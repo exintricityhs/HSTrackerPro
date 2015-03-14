@@ -20,7 +20,7 @@ Note: ~ refers to your /Users/<username> folder
 # CREATE DECKS
 1. Decks can be created from the website http://hearthstats.net or by hand.
 
-- It is recommended that you create the decks at heartstats.net to avoid typos.
+- It is recommended that you create the decks at hearthstats.net to avoid typos.
 - heartstats.net provides an Export button, where you can copy/paste your deck into
 a text file.
 - See the examples in the /decks folder
