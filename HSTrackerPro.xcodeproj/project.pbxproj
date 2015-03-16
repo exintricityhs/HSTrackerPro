@@ -1385,6 +1385,7 @@
 		B61E2A301A951005000CA1FC /* ysera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ysera.png; path = images/ysera.png; sourceTree = "<group>"; };
 		B61E2A311A951005000CA1FC /* zombie-chow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "zombie-chow.png"; path = "images/zombie-chow.png"; sourceTree = "<group>"; };
 		B62321C11A9AF873006D0AB1 /* frameHighlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = frameHighlight.png; path = images/frameHighlight.png; sourceTree = "<group>"; };
+		B68599921AB5642F00B52E07 /* Logger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Logger.h; sourceTree = "<group>"; };
 		B6A7E15F1AB15FC200364147 /* OpponentWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpponentWindow.h; path = src/OpponentWindow.h; sourceTree = "<group>"; };
 		B6A7E1601AB15FC200364147 /* OpponentWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OpponentWindow.m; path = src/OpponentWindow.m; sourceTree = "<group>"; };
 		B6A7E1661AB1679000364147 /* OpponentWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OpponentWindow.xib; path = src/OpponentWindow.xib; sourceTree = "<group>"; };
@@ -1472,6 +1473,7 @@
 				B6F2A8CF1A96BF8900B305D6 /* cjson */,
 				B6F2A8D21A96BF8900B305D6 /* DBCreator.cpp */,
 				B6F2A8D31A96BF8900B305D6 /* DBCreator.h */,
+				B68599921AB5642F00B52E07 /* Logger.h */,
 			);
 			name = util;
 			path = src/util;

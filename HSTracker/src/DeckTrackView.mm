@@ -36,6 +36,7 @@
 #include "hs/Deck.h"
 #include "hs/LogParser.h"
 #include "util/DBCreator.h"
+#include "util/Logger.h"
 
 // log.config goes in ~/Library/Preferences/Blizzard/Hearthstone/log.config
 
@@ -55,6 +56,11 @@ static HS::Deck playerDeck;
 
 const int MaxSlots = 30;
 const float UpdateFps = 30;
+
+// User defaults
+NSString* SelfWindowName = @"HSSELFWindowPos";
+NSString* OppWindowName = @"HSOPPWindowPos";
+NSString* DeckPath = @"HSDeckPath";
 
 OpponentView* opponentView;
 
@@ -81,6 +87,8 @@ OpponentView* opponentView;
 - (void)resetDeck;
 - (void)updateDeck;
 - (void)updateOpponentDeck:(HS::Deck*)deck;
+
+- (void)windowMoved:(NSNotification *)notification;
 
 - (void)unitTest;
 - (void)unitTest2;
@@ -113,6 +121,11 @@ int cardCount[MaxSlots];
     
     windowAlpha = 100;
     
+    // save last position of windows
+    [[self window] setFrameUsingName:SelfWindowName];
+    [[opponentView window] setFrameUsingName:OppWindowName];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(windowMoved:) name:NSWindowDidMoveNotification object:nil];
+    
     // open card DB
     NSString* dbPath = [[NSBundle mainBundle] pathForResource:@"cardsDB.enUS" ofType:@"json"];
     if (dbPath && db.open([dbPath UTF8String]))
@@ -120,7 +133,7 @@ int cardCount[MaxSlots];
         db.createDatabase();
         //db.printDatabase();
     }
-    
+        
 #if ENABLE_TEST
     logParser.open(fileName, false);
 #else
@@ -173,7 +186,6 @@ int cardCount[MaxSlots];
             
             for (std::vector<HS::PlayedCard>::iterator it=playedCards.begin(); it!=playedCards.end(); ++it)
             {
-                //std::cout << "Card drawn: " << it->getCardId() << std::endl;
                 for (int i=0; i<playerDeck.getSize(); ++i)
                 {
                     if (!playerDeck.getCard(i)->getCardId().compare(it->getCardId()))
@@ -193,11 +205,6 @@ int cardCount[MaxSlots];
         if (opponentDeck)
         {
             [self updateOpponentDeck:opponentDeck];
-            /*std::cout << "opponent deck updated" << std::endl;
-            for (uint32_t i=0; i<opponentDeck->getSize(); ++i)
-            {
-                std::cout << "    card: " << opponentDeck->getCard(i)->getName() << ", count: " << opponentDeck->getCount(i) << std::endl;
-            }*/
         }
         
         //[self unitTest];
@@ -213,6 +220,15 @@ int cardCount[MaxSlots];
 - (IBAction)loadDeck:(id)sender
 {
     NSOpenPanel* openPanel = [NSOpenPanel openPanel];
+    
+    // setDirectoryURL
+    NSString* savedDir = [[NSUserDefaults standardUserDefaults] stringForKey:DeckPath];
+    
+    if (savedDir)
+    {
+        NSURL* url = [NSURL URLWithString:savedDir];
+        [openPanel setDirectoryURL:url];
+    }
     
     openPanel.title = @"Choose a deck file";
     openPanel.showsResizeIndicator = YES;
@@ -235,6 +251,10 @@ int cardCount[MaxSlots];
             
             // update deck
             [self resetDeck];
+            
+            // save directory for net time
+            NSString *directory = [path stringByDeletingLastPathComponent];
+            [[NSUserDefaults standardUserDefaults] setObject:directory forKey:DeckPath];
          }
     }];
 }
@@ -247,6 +267,18 @@ int cardCount[MaxSlots];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(optionsClosed:) name:NSWindowWillCloseNotification object:nil];
     optionsWindow->sliderValue = windowAlpha;
     [optionsWindow showWindow:self];*/
+}
+
+- (IBAction)resetWindows:(id)sender
+{
+    NSPoint point;
+    point.x = 20;
+    point.y = 150;
+    
+    [[self window] setFrameOrigin:point];
+    
+    point.x += 200;
+    [[opponentView window] setFrameOrigin:point];
 }
 
 - (void) optionsClosed:(NSNotification*)notification
@@ -1062,6 +1094,18 @@ int cardCount[MaxSlots];
     }
     
     [opponentView setNeedsDisplay:true];
+}
+
+- (void)windowMoved:(NSNotification *)notification
+{
+    if (notification.object == [self window])
+    {
+        [[self window] saveFrameUsingName:SelfWindowName];
+    }
+    else if (notification.object == [opponentView window])
+    {
+        [[opponentView window] saveFrameUsingName:OppWindowName];
+    }
 }
 
 static int count = 29;

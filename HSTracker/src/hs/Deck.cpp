@@ -23,12 +23,13 @@
  * THE SOFTWARE.
  */
 
-#include "Deck.h"
-
-#include <iostream>
 #include <string.h>
 
-namespace HS {
+#include "Deck.h"
+#include "../util/Logger.h"
+
+namespace HS
+{
 
 using namespace std;
 
@@ -79,7 +80,7 @@ bool Deck::open(const std::string& filename)
 
     if (!mFile.is_open())
     {
-        cout << "Could not open file " << filename << endl;
+        LOG_WARN("Could not open file " << filename << endl);
         return false;
     }
 
@@ -112,12 +113,12 @@ bool Deck::createDeck(DBCreator& db)
             Card* card = db.findCardByName(name);
             if (card == NULL)
             {
-                cout << "could not find card " << name << " in database" << endl;
+                LOG_WARN("Could not find card " << name << " in database" << endl);
                 continue;
             }
             if (addCardToDeck(card, value) == false)
             {
-                cout << "failed to add " << card->getCardId() << " to deck" << endl;
+                LOG_WARN("failed to add " << card->getCardId() << " to deck" << endl);
                 continue;
             }
         }
@@ -228,7 +229,8 @@ Card* Deck::getCardById(const string& id)
             return mDeck[i]->card;
         }
     }
-    //cout << "could not find card " << id << endl;
+    
+    LOG_WARN("could not find card " << id << endl);
     return NULL;
 }
 
@@ -241,7 +243,8 @@ Card* Deck::getCardByName(const string& name)
             return mDeck[i]->card;
         }
     }
-    cout << "could not find card " << name << endl;
+    
+    LOG_WARN("could not find card " << name << endl);
     return NULL;
 }
 
@@ -268,7 +271,7 @@ bool Deck::addCardToDeck(Card* card, uint32_t count)
         Card* myCard = (*it)->card;
         if (myCard == NULL)
         {
-            cout << "card is null" << std::endl;
+            LOG_WARN("card is null" << std::endl);
             return false;
         }
         if (card->getCost() < myCard->getCost())
@@ -307,7 +310,7 @@ bool Deck::addCardToDeck(Card* card, uint32_t count)
 
     if (mDeck.size() >= kMaxSlots)
     {
-        cout << "max deck size of " << kMaxSlots << " reached! cannot add any more cards" << std::endl;
+        LOG_WARN("Max deck size of " << kMaxSlots << " reached! cannot add any more cards" << std::endl);
         return false;
     }
 

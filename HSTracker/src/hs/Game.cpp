@@ -24,8 +24,7 @@
  */
 
 #include "Game.h"
-
-#include <iostream>
+#include "../util/Logger.h"
 
 namespace HS
 {
@@ -78,7 +77,7 @@ void Game::setSelf(const std::string& playerId)
     
     if (playerNumber > MaxPlayers || playerNumber <= 0)
     {
-        std::cout << "Invalid playerId passed in" << std::endl;
+        LOG_WARN("Invalid playerId passed in" << std::endl);
         return;
     }
     
@@ -104,7 +103,7 @@ void Game::setOpponent(const std::string& playerId)
     
     if (playerNumber > MaxPlayers || playerNumber <= 0)
     {
-        std::cout << "Invalid playerId passed in" << std::endl;
+        LOG_WARN("Invalid playerId passed in" << std::endl);
         return;
     }
     
@@ -136,15 +135,15 @@ void Game::moveDeckToHand(const std::string& playerId, const std::string& id, co
     
     if (mPlayers[playerNumber - 1].addCardToHand(card))
     {
-        /*if (mDB)
+        if (mDB)
         {
             Card* card = mDB->findCardById(cardId);
             
             if (card)
             {
-                std::cout << "====== Added card "<< card->getName() << " with id: " << id << " to player" << playerId << std::endl;
+                LOG_INFO("Added card "<< card->getName() << " with id: " << id << " to player" << playerId << std::endl);
             }
-        }*/
+        }
     }
 }
     
@@ -170,10 +169,10 @@ void Game::playCard(const std::string& playerId, const std::string& id, const st
     {
         justPlayedCard = mDB->findCardById(cardId);
         
-        /*if (justPlayedCard)
+        if (justPlayedCard)
         {
-            std::cout << "Player " << playerId << " played card:" << justPlayedCard->getName() << " id:" << id << "cardId: " << cardId << std::endl;
-        }*/
+            LOG_INFO("Player " << playerId << " played card:" << justPlayedCard->getName() << " id:" << id << "cardId: " << cardId << std::endl);
+        }
     }
     
     PlayedCard card;
@@ -188,7 +187,7 @@ void Game::playCard(const std::string& playerId, const std::string& id, const st
     
     if (playerNumber > MaxPlayers || playerNumber <= 0)
     {
-        std::cout << "Invalid playerId passed in" << std::endl;
+        LOG_WARN("Invalid playerId passed in" << std::endl);
         return;
     }
     
@@ -197,14 +196,7 @@ void Game::playCard(const std::string& playerId, const std::string& id, const st
     
 bool Game::isIgnored(const std::string& cardId)
 {
-    // ignore Paladin hero power minion, coin, parts, shaman totems, rogue knife
-    if (!cardId.compare("CS2_101t") || !cardId.compare("GAME_005") || cardId.find("PART_") != std::string::npos ||
-        !cardId.compare("NEW1_009") || !cardId.compare("CS2_050") || !cardId.compare("CS2_051") || !cardId.compare("CS2_052") ||
-        !cardId.compare("CS2_082"))
-    {
-        return true;
-    }
-    else if (mDB)
+    if (mDB)
     {
         Card* card = mDB->findCardById(cardId);
         
@@ -213,7 +205,7 @@ bool Game::isIgnored(const std::string& cardId)
             return false;
         }
         
-        if (card->getCardType() == Card::CardType_Hero || card->getCardType() == Card::CardType_HeroPower)
+        if (card->getCardType() == Card::CardType_Hero || card->getCardType() == Card::CardType_HeroPower || !card->getCollectible())
         {
             return true;
         }

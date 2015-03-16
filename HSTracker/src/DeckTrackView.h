@@ -32,6 +32,7 @@
 // menu items
 - (IBAction)loadDeck:(id)sender;
 - (IBAction)changeAlpha:(id)sender;
+- (IBAction)resetWindows:(id)sender;
 
 // TODO: Switch this to an IBOutletContainer or NSArray
 

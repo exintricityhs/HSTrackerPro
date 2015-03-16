@@ -24,8 +24,7 @@
  */
 
 #include "Player.h"
-
-#include <iostream>
+#include "../util/Logger.h"
 
 namespace HS
 {
@@ -89,7 +88,7 @@ bool Player::addCardToHand(const HS::PlayedCard& playedCard)
 {
     if (!playedCard.getId().length())
     {
-        std::cout << "addCardToHand - ignoring due to no id" << std::endl;
+        LOG_INFO("addCardToHand - ignoring due to no id" << std::endl);
         return false;
     }
     
@@ -124,12 +123,12 @@ void Player::removeCardFromHand(HS::PlayedCard& card)
     
     if (mType == Player::Self)
     {
-        /*std::cout << "SELF hand: " << std::endl;
+        LOG_INFO("SELF hand: " << std::endl);
         
         for (std::vector<HS::PlayedCard>::iterator it=mHand.begin(); it!=mHand.end(); ++it)
         {
-            std::cout << "    cardId:" << it->getCardId() << std::endl;
-        }*/
+            LOG_INFO("    cardId:" << it->getCardId() << std::endl);
+        }
     }
     else if (mType == Player::Opponent)
     {

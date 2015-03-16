@@ -64,6 +64,12 @@
                                     <action selector="changeAlpha:" target="Gpu-Dr-TZ8" id="gMv-2T-FfV"/>
                                 </connections>
                             </menuItem>
+                            <menuItem title="Reset Windows" id="k7k-r7-JDi">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="resetWindows:" target="Gpu-Dr-TZ8" id="yf6-0d-9c2"/>
+                                </connections>
+                            </menuItem>
                         </items>
                     </menu>
                 </menuItem>

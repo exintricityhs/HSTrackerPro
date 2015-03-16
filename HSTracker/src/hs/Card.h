@@ -105,6 +105,12 @@ public:
     void setRarity(std::string rarity);
     void setRarity(CardRarity rarity);
     CardRarity getRarity();
+    
+    /**
+     * Gets/sets collectible
+     */
+    void setCollectible(bool collectible);
+    bool getCollectible();
 
     /**
      * Helper function that returns name in all lower case with '-' instead of spaces for texture lookup
@@ -119,6 +125,7 @@ private:
     uint32_t    mHealth;
     uint32_t    mCost;
     CardRarity  mRarity;
+    bool        mCollectible;
 
 };
 

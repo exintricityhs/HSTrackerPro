@@ -39,6 +39,7 @@ Card::Card()
     , mHealth(0)
     , mCost(0)
     , mRarity(CardRarity_Invalid)
+    , mCollectible(true)
 {
 }
 
@@ -178,6 +179,16 @@ void Card::setRarity(CardRarity rarity)
 Card::CardRarity Card::getRarity()
 {
     return mRarity;
+}
+    
+void Card::setCollectible(bool collectible)
+{
+    mCollectible = collectible;
+}
+    
+bool Card::getCollectible()
+{
+    return mCollectible;
 }
 
 std::string Card::getNoSpaceName()

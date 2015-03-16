@@ -23,11 +23,11 @@
  * THE SOFTWARE.
  */
 
+#include <fstream>
+
 #include "DBCreator.h"
 #include "cjson/cJSON.h"
-
-#include <iostream>
-#include <fstream>
+#include "Logger.h"
 
 namespace HS
 {
@@ -65,7 +65,7 @@ bool DBCreator::open(const std::string& filename)
 
     if (!file.is_open())
     {
-        std::cout << "Could not open file " << filename << std::endl;
+        LOG_WARN("Could not open file " << filename << std::endl);
         return false;
     }
 
@@ -77,7 +77,7 @@ bool DBCreator::open(const std::string& filename)
 
     if (fileData == NULL)
     {
-        std::cout << "Could not malloc file data" << filename << std::endl;
+        LOG_WARN("Could not malloc file data" << filename << std::endl);
         file.close();
         return false;
     }
@@ -92,12 +92,12 @@ bool DBCreator::open(const std::string& filename)
 
     if (mDbJson == NULL)
     {
-        std::cout << "cJSON_Parse failed " << filename << std::endl;
+        LOG_WARN("cJSON_Parse failed " << filename << std::endl);
         return false;
     }
     else
     {
-        //std::cout << "successfully parsed json file" << std::endl;
+        LOG_TRACE("successfully parsed json file" << std::endl);
     }
 
     return true;
@@ -115,7 +115,7 @@ void DBCreator::getDeck(std::string deckType)
     }
 
     int size = cJSON_GetArraySize(basic);
-    //std::cout << "size of array is" << size << std::endl;
+    LOG_TRACE("size of array is" << size << std::endl);
     for (int i = 0; i < size; i++)
     {
         cJSON* newEntry = cJSON_GetArrayItem(basic, i);
@@ -174,6 +174,23 @@ void DBCreator::getDeck(std::string deckType)
                 std::string value = std::string(rarity->valuestring);
                 card->setRarity(value);
             }
+            
+            cJSON* collectible = cJSON_GetObjectItem(newEntry, "collectible");
+            if (collectible)
+            {
+                if (collectible->type == cJSON_True)
+                {
+                    card->setCollectible(true);
+                }
+                else
+                {
+                    card->setCollectible(false);
+                }
+            }
+            else
+            {
+                card->setCollectible(false);
+            }
 
             mCardDB[card->getCardId()] = card;
 
@@ -185,7 +202,7 @@ bool DBCreator::createDatabase()
 {
     if (mDbJson == NULL)
     {
-        std::cout << "no database json has been set" << std::endl;
+        LOG_WARN("no database json has been set" << std::endl);
         return false;
     }
     getDeck("Basic");
@@ -206,7 +223,7 @@ Card* DBCreator::findCardByName(const std::string& name)
             Card* card = it->second;
             if (name.compare(card->getName()) == 0)
             {
-                //std::cout << "found card!!" << std::endl;
+                LOG_TRACE("found card!!" << std::endl);
                 return card;
             }
         }
@@ -257,12 +274,12 @@ void DBCreator::printDatabase()
     {
         if (it != mCardDB.end())
         {
-            std::cout << "card with id: " << it->first;
+            LOG_INFO("card with id: " << it->first);
             Card* card = it->second;
             if (card)
             {
-                std::cout << " name: " << card->getName();
-                std::cout << " type: " << card->getCardType() << std::endl;
+                LOG_INFO(" name: " << card->getName());
+                LOG_INFO(" type: " << card->getCardType() << std::endl;)
             }
         }
     }

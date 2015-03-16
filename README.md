@@ -8,17 +8,17 @@ Screenshots:
 ![Tracker2](http://i.imgur.com/r2rqqMT.png "Highlight cards")
 
 # SETUP
-1. Logging needs to be enabled in Hearthstone in order for deck tracking to work.
+- Logging needs to be enabled in Hearthstone in order for deck tracking to work.
 
-Copy the included file config/log.config to the following directory:
+- Copy the included file config/log.config to the following directory:
 
-~/Library/Preferences/Blizzard/Hearthstone/log.config
+- ~/Library/Preferences/Blizzard/Hearthstone/log.config
 
-Note: ~ refers to your /Users/<username> folder
+- Note: ~refers to your /Users/<username> folder. By default, this folder is hidden. You can enable visibility of the folder following these instructions: [Enable Visibility](http://www.macworld.com/article/2057221/how-to-view-the-library-folder-in-mavericks.html "Enable Visibility")
 
 
 # CREATE DECKS
-1. Decks can be created from the website http://hearthstats.net or by hand.
+- Decks can be created from the website http://hearthstats.net or by hand.
 
 - It is recommended that you create the decks at hearthstats.net to avoid typos.
 - heartstats.net provides an Export button, where you can copy/paste your deck into
@@ -41,16 +41,12 @@ a text file.
 
 - The SELF and OPPONENT tracking will automatically be reset at the start of a new match.
 
-# COMING SOON
-1. Display 2+ correctly.
-2. Window alpha controls
-
 # BUGS
 Feel free to report bugs to: exintricityhs@gmail.com
 
 Donations appreciated: [![PayPal](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=Z3GZRVDGW3NKN&lc=US&item_name=EXintricity&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted)
 
 # FAQ
-1. Is Blizzard okay with this? 
+- Is Blizzard okay with this? 
 
-   YES (https://twitter.com/bdbrode/status/511151446038179840)
+    - YES (https://twitter.com/bdbrode/status/511151446038179840)

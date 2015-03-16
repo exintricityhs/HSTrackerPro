@@ -23,9 +23,12 @@
  * THE SOFTWARE.
  */
 
-#include "../hs/LogParser.h"
 #include <iostream>
 #include <string.h>
+
+#include "LogParser.h"
+#include "../util/Logger.h"
+
 
 namespace HS
 {
@@ -63,7 +66,7 @@ bool LogParser::open(const std::string& file, bool seekToEnd)
 
     if (!mFile.is_open())
     {
-        cout << "Could not open file " << file << endl;
+        LOG_WARN("Could not open file " << file << endl);
         return false;
     }
 
@@ -151,8 +154,6 @@ bool LogParser::readLine()
         return false;
     }
 
-//    cout << "Read line (" << mSeekPos << "): " << mCurrentLine << endl;
-
     return true;
 }
 
@@ -178,13 +179,13 @@ void LogParser::processZoneGame()
         {
             mGame.setSelf(playData["player"]);
             mGame.getSelf()->setHeroId(playData["cardId"]);
-            //cout << "====== set SELF to player "<< playData["player"] << " with hero id: " <<playData["cardId"] << endl;
+            LOG_INFO("Set SELF to player "<< playData["player"] << " with hero id: " <<playData["cardId"] << endl);
         }
         else
         {
             mGame.setOpponent(playData["player"]);
             mGame.getOpponent()->setHeroId(playData["cardId"]);
-            //cout << "====== set OPPONENT to player "<< playData["player"] << " with hero id: " <<playData["cardId"] << endl;
+            LOG_INFO("Set OPPONENT to player "<< playData["player"] << " with hero id: " <<playData["cardId"] << endl);
         }
     }
     
@@ -269,7 +270,7 @@ void LogParser::processPowerGame()
         mGameReset = true;
         mMulliganDone = false;
         mLinkedEntities.clear();
-        //cout << "====== Created new game" << endl;
+        LOG_INFO("Created new game" << endl);
         return;
     }
     else if (mCurrentLine.find("tag=MULLIGAN_STATE value=DONE") != string::npos)
@@ -351,7 +352,7 @@ void LogParser::findKeyValues(string data, std::map<std::string, std::string>* p
 
     char* token = strtok(dataBuf, "=");
     
-    //std::cout << "Key/value pairs:" << std::endl;
+    LOG_TRACE("Key/value pairs:")
 
     // TODO : fix nested key/value pairs
     while (token)
@@ -371,14 +372,14 @@ void LogParser::findKeyValues(string data, std::map<std::string, std::string>* p
             {
                 value = tokenStr.substr(0, spacePos);
                 playData->insert(pair<string, string>(key, value));
-                //std::cout << "    key:" << key << ", value:" << value << std::endl;
+                LOG_TRACE("    key:" << key << ", value:" << value << std::endl);
                 key = tokenStr.substr(spacePos + 1, string::npos);
             }
             else
             {
                 value = tokenStr;
                 playData->insert(pair<string, string>(key, value));
-                //std::cout << "    key:" << key << ", value:" << value << std::endl;
+                LOG_TRACE("    key:" << key << ", value:" << value << std::endl);
             }
         }
 
