@@ -41,6 +41,8 @@ a text file.
 
 - The SELF and OPPONENT tracking will automatically be reset at the start of a new match.
 
+- Command ⌘ + L will lock/unlock the overlays
+
 # BUGS
 Feel free to report bugs to: exintricityhs@gmail.com
 

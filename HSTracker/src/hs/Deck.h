@@ -89,7 +89,7 @@ public:
      * @param decAmount amount to decrement by
      * @return true of successful, false otherwise
      */
-    bool incrementCount(const std::string& id, uint32_t decAmount);
+    bool incrementCount(const std::string& id, uint32_t incAmount);
 
     /**
      * returns decrements the number of particular cards in deck
@@ -112,6 +112,11 @@ public:
      * @return how many of the particular card is in the deck at the specified position
      */
     uint32_t getCount(uint32_t pos);
+    
+    /**
+     * returns the remaining number of cards in the deck
+     */
+    uint32_t getRemaining();
 
     /**
      * Returns a card by id (e.g. CS1_042)
@@ -139,6 +144,7 @@ private:
     std::fstream mFile;
     std::string mFileName;
     std::vector<Slot*> mDeck;
+    int32_t mCardsRemaining;
     const uint32_t kMaxSlots = 30;
 };
 

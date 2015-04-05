@@ -31,6 +31,12 @@
 
 namespace HS
 {
+    
+namespace
+{
+    typedef std::vector<cJSON*> JsonCardList;
+    typedef std::map<std::string, JsonCardList> JsonCardMap;
+}
 
 DBCreator::DBCreator()
     : mDbJson(NULL)
@@ -206,9 +212,10 @@ bool DBCreator::createDatabase()
         return false;
     }
     getDeck("Basic");
-    getDeck("Expert");
+    getDeck("Classic");
     getDeck("Curse of Naxxramas");
     getDeck("Goblins vs Gnomes");
+    getDeck("Blackrock Mountain");
 
     return true;
 }
@@ -221,7 +228,7 @@ Card* DBCreator::findCardByName(const std::string& name)
         if (it->second != NULL)
         {
             Card* card = it->second;
-            if (name.compare(card->getName()) == 0)
+            if (name.compare(card->getName()) == 0 && card->getCardType() != Card::CardType_Hero)
             {
                 LOG_TRACE("found card!!" << std::endl);
                 return card;
@@ -283,6 +290,20 @@ void DBCreator::printDatabase()
             }
         }
     }
+}
+    
+void DBCreator::convertJson(const std::string& filename)
+{
+    if (!open(filename))
+    {
+        LOG_WARN("Unable to open " << "filename" << std::endl);
+        return;
+    }
+    
+    // print pretty
+    char* jsonPretty = cJSON_Print(mDbJson);
+    
+    LOG_INFO(jsonPretty << std::endl);
 }
 
 } /* namespace HS */

@@ -31,169 +31,19 @@
 
 // menu items
 - (IBAction)loadDeck:(id)sender;
-- (IBAction)changeAlpha:(id)sender;
+- (IBAction)lockWindows:(id)sender;
 - (IBAction)resetWindows:(id)sender;
 
-// TODO: Switch this to an IBOutletContainer or NSArray
+@property IBOutlet NSImageView* slot1Image;             // card image template
+@property IBOutlet NSImageView* slot1Background;        // card background
+@property IBOutlet NSImageView* slot1Count;             // card count images (0-9, legendary)
+@property IBOutlet NSImageView* slot1CountBackground;   // card count background images
+@property IBOutlet NSTextField* slot1Label;             // card name
+@property IBOutlet NSTextField* slot1Cost;              // card cost
+@property IBOutlet NSImageView* slot1Dim;               // dim
 
-// card images
-@property IBOutlet NSImageView* slot1View;
-@property IBOutlet NSImageView* slot2View;
-@property IBOutlet NSImageView* slot3View;
-@property IBOutlet NSImageView* slot4View;
-@property IBOutlet NSImageView* slot5View;
-@property IBOutlet NSImageView* slot6View;
-@property IBOutlet NSImageView* slot7View;
-@property IBOutlet NSImageView* slot8View;
-@property IBOutlet NSImageView* slot9View;
-@property IBOutlet NSImageView* slot10View;
-@property IBOutlet NSImageView* slot11View;
-@property IBOutlet NSImageView* slot12View;
-@property IBOutlet NSImageView* slot13View;
-@property IBOutlet NSImageView* slot14View;
-@property IBOutlet NSImageView* slot15View;
-@property IBOutlet NSImageView* slot16View;
-@property IBOutlet NSImageView* slot17View;
-@property IBOutlet NSImageView* slot18View;
-@property IBOutlet NSImageView* slot19View;
-@property IBOutlet NSImageView* slot20View;
-@property IBOutlet NSImageView* slot21View;
-@property IBOutlet NSImageView* slot22View;
-@property IBOutlet NSImageView* slot23View;
-@property IBOutlet NSImageView* slot24View;
-@property IBOutlet NSImageView* slot25View;
-@property IBOutlet NSImageView* slot26View;
-@property IBOutlet NSImageView* slot27View;
-@property IBOutlet NSImageView* slot28View;
-@property IBOutlet NSImageView* slot29View;
-@property IBOutlet NSImageView* slot30View;
+@property IBOutlet NSTextField* mouseTip;               // info about the card slot
 
-// card overlay images (single, double, legendary)
-@property IBOutlet NSImageView* slot1Count;
-@property IBOutlet NSImageView* slot2Count;
-@property IBOutlet NSImageView* slot3Count;
-@property IBOutlet NSImageView* slot4Count;
-@property IBOutlet NSImageView* slot5Count;
-@property IBOutlet NSImageView* slot6Count;
-@property IBOutlet NSImageView* slot7Count;
-@property IBOutlet NSImageView* slot8Count;
-@property IBOutlet NSImageView* slot9Count;
-@property IBOutlet NSImageView* slot10Count;
-@property IBOutlet NSImageView* slot11Count;
-@property IBOutlet NSImageView* slot12Count;
-@property IBOutlet NSImageView* slot13Count;
-@property IBOutlet NSImageView* slot14Count;
-@property IBOutlet NSImageView* slot15Count;
-@property IBOutlet NSImageView* slot16Count;
-@property IBOutlet NSImageView* slot17Count;
-@property IBOutlet NSImageView* slot18Count;
-@property IBOutlet NSImageView* slot19Count;
-@property IBOutlet NSImageView* slot20Count;
-@property IBOutlet NSImageView* slot21Count;
-@property IBOutlet NSImageView* slot22Count;
-@property IBOutlet NSImageView* slot23Count;
-@property IBOutlet NSImageView* slot24Count;
-@property IBOutlet NSImageView* slot25Count;
-@property IBOutlet NSImageView* slot26Count;
-@property IBOutlet NSImageView* slot27Count;
-@property IBOutlet NSImageView* slot28Count;
-@property IBOutlet NSImageView* slot29Count;
-@property IBOutlet NSImageView* slot30Count;
-
-// card name labels
-@property IBOutlet NSTextField* slot1Label;
-@property IBOutlet NSTextField* slot2Label;
-@property IBOutlet NSTextField* slot3Label;
-@property IBOutlet NSTextField* slot4Label;
-@property IBOutlet NSTextField* slot5Label;
-@property IBOutlet NSTextField* slot6Label;
-@property IBOutlet NSTextField* slot7Label;
-@property IBOutlet NSTextField* slot8Label;
-@property IBOutlet NSTextField* slot9Label;
-@property IBOutlet NSTextField* slot10Label;
-@property IBOutlet NSTextField* slot11Label;
-@property IBOutlet NSTextField* slot12Label;
-@property IBOutlet NSTextField* slot13Label;
-@property IBOutlet NSTextField* slot14Label;
-@property IBOutlet NSTextField* slot15Label;
-@property IBOutlet NSTextField* slot16Label;
-@property IBOutlet NSTextField* slot17Label;
-@property IBOutlet NSTextField* slot18Label;
-@property IBOutlet NSTextField* slot19Label;
-@property IBOutlet NSTextField* slot20Label;
-@property IBOutlet NSTextField* slot21Label;
-@property IBOutlet NSTextField* slot22Label;
-@property IBOutlet NSTextField* slot23Label;
-@property IBOutlet NSTextField* slot24Label;
-@property IBOutlet NSTextField* slot25Label;
-@property IBOutlet NSTextField* slot26Label;
-@property IBOutlet NSTextField* slot27Label;
-@property IBOutlet NSTextField* slot28Label;
-@property IBOutlet NSTextField* slot29Label;
-@property IBOutlet NSTextField* slot30Label;
-
-// card cost labels
-@property IBOutlet NSTextField* slot1Cost;
-@property IBOutlet NSTextField* slot2Cost;
-@property IBOutlet NSTextField* slot3Cost;
-@property IBOutlet NSTextField* slot4Cost;
-@property IBOutlet NSTextField* slot5Cost;
-@property IBOutlet NSTextField* slot6Cost;
-@property IBOutlet NSTextField* slot7Cost;
-@property IBOutlet NSTextField* slot8Cost;
-@property IBOutlet NSTextField* slot9Cost;
-@property IBOutlet NSTextField* slot10Cost;
-@property IBOutlet NSTextField* slot11Cost;
-@property IBOutlet NSTextField* slot12Cost;
-@property IBOutlet NSTextField* slot13Cost;
-@property IBOutlet NSTextField* slot14Cost;
-@property IBOutlet NSTextField* slot15Cost;
-@property IBOutlet NSTextField* slot16Cost;
-@property IBOutlet NSTextField* slot17Cost;
-@property IBOutlet NSTextField* slot18Cost;
-@property IBOutlet NSTextField* slot19Cost;
-@property IBOutlet NSTextField* slot20Cost;
-@property IBOutlet NSTextField* slot21Cost;
-@property IBOutlet NSTextField* slot22Cost;
-@property IBOutlet NSTextField* slot23Cost;
-@property IBOutlet NSTextField* slot24Cost;
-@property IBOutlet NSTextField* slot25Cost;
-@property IBOutlet NSTextField* slot26Cost;
-@property IBOutlet NSTextField* slot27Cost;
-@property IBOutlet NSTextField* slot28Cost;
-@property IBOutlet NSTextField* slot29Cost;
-@property IBOutlet NSTextField* slot30Cost;
-
-// dim images
-@property IBOutlet NSImageView* slot1Dim;
-@property IBOutlet NSImageView* slot2Dim;
-@property IBOutlet NSImageView* slot3Dim;
-@property IBOutlet NSImageView* slot4Dim;
-@property IBOutlet NSImageView* slot5Dim;
-@property IBOutlet NSImageView* slot6Dim;
-@property IBOutlet NSImageView* slot7Dim;
-@property IBOutlet NSImageView* slot8Dim;
-@property IBOutlet NSImageView* slot9Dim;
-@property IBOutlet NSImageView* slot10Dim;
-@property IBOutlet NSImageView* slot11Dim;
-@property IBOutlet NSImageView* slot12Dim;
-@property IBOutlet NSImageView* slot13Dim;
-@property IBOutlet NSImageView* slot14Dim;
-@property IBOutlet NSImageView* slot15Dim;
-@property IBOutlet NSImageView* slot16Dim;
-@property IBOutlet NSImageView* slot17Dim;
-@property IBOutlet NSImageView* slot18Dim;
-@property IBOutlet NSImageView* slot19Dim;
-@property IBOutlet NSImageView* slot20Dim;
-@property IBOutlet NSImageView* slot21Dim;
-@property IBOutlet NSImageView* slot22Dim;
-@property IBOutlet NSImageView* slot23Dim;
-@property IBOutlet NSImageView* slot24Dim;
-@property IBOutlet NSImageView* slot25Dim;
-@property IBOutlet NSImageView* slot26Dim;
-@property IBOutlet NSImageView* slot27Dim;
-@property IBOutlet NSImageView* slot28Dim;
-@property IBOutlet NSImageView* slot29Dim;
-@property IBOutlet NSImageView* slot30Dim;
+@property IBOutlet NSMenuItem* lockWindowItem;
 
 @end

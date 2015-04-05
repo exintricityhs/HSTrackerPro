@@ -24,18 +24,18 @@
  */
 
 #import "OpponentView.h"
+#import "Slot.h"
 
 // private functions
 @interface OpponentView()
 
-- (NSImageView*)getCardImage:(int) slot;
-- (NSImageView*)getCardCountImage:(int) slot;
-- (NSTextField*)getCardNameLabel:(int) slot;
-- (NSTextField*)getCardCostLabel:(int) slot;
+- (void)setupCollections;
 
 @end
 
 @implementation OpponentView
+
+NSMutableArray* opponentSlots;
 
 const int MaxSlots = 30;
 
@@ -52,9 +52,16 @@ const int MaxSlots = 30;
     extern OpponentView* opponentView;
     opponentView = self;
     
+    [self setupCollections];
+    
     for (int i=0; i<MaxSlots; ++i)
     {
+        Slot* s = opponentSlots[i];
+        
         [self enableSlot:i enable:false];
+        s.animationFrame = -1;
+        s.dimmed = false;
+        s.animating = false;
     }
 }
 
@@ -63,469 +70,133 @@ const int MaxSlots = 30;
     [super drawRect:dirtyRect];
 }
 
-- (NSImageView*)getCardImage:(int) slot
+- (void)setupCollections
 {
-    switch(slot)
+    opponentSlots = [[NSMutableArray alloc] initWithCapacity:MaxSlots];
+    
+    // setup template
+    Slot* templateSlot = [[Slot alloc] init];
+    templateSlot.slotImage = _slot1Image;
+    templateSlot.slotBackground = _slot1Background;
+    templateSlot.slotCount = _slot1Count;
+    templateSlot.slotCountBackground = _slot1CountBackground;
+    templateSlot.slotLabel = _slot1Label;
+    templateSlot.slotCost = _slot1Cost;
+    
+    opponentSlots[0] = templateSlot;
+    
+    const int yOffset = 26;
+    
+    for (int i=1; i<MaxSlots; ++i)
     {
-        case 0:
-            return _slot1View;
-            
-        case 1:
-            return _slot2View;
-            
-        case 2:
-            return _slot3View;
-            
-        case 3:
-            return _slot4View;
-            
-        case 4:
-            return _slot5View;
-            
-        case 5:
-            return _slot6View;
-            
-        case 6:
-            return _slot7View;
-            
-        case 7:
-            return _slot8View;
-            
-        case 8:
-            return _slot9View;
-            
-        case 9:
-            return _slot10View;
-            
-        case 10:
-            return _slot11View;
-            
-        case 11:
-            return _slot12View;
-            
-        case 12:
-            return _slot13View;
-            
-        case 13:
-            return _slot14View;
-            
-        case 14:
-            return _slot15View;
-            
-        case 15:
-            return _slot16View;
-            
-        case 16:
-            return _slot17View;
-            
-        case 17:
-            return _slot18View;
-            
-        case 18:
-            return _slot19View;
-            
-        case 19:
-            return _slot20View;
-            
-        case 20:
-            return _slot21View;
-            
-        case 21:
-            return _slot22View;
-            
-        case 22:
-            return _slot23View;
-            
-        case 23:
-            return _slot24View;
-            
-        case 24:
-            return _slot25View;
-            
-        case 25:
-            return _slot26View;
-            
-        case 26:
-            return _slot27View;
-            
-        case 27:
-            return _slot28View;
-            
-        case 28:
-            return _slot29View;
-            
-        case 29:
-            return _slot30View;
-            
-        default:
-            return nil;
-    }
-}
-
-- (NSImageView*)getCardCountImage:(int) slot
-{
-    switch(slot)
-    {
-        case 0:
-            return _slot1Count;
-            
-        case 1:
-            return _slot2Count;
-            
-        case 2:
-            return _slot3Count;
-            
-        case 3:
-            return _slot4Count;
-            
-        case 4:
-            return _slot5Count;
-            
-        case 5:
-            return _slot6Count;
-            
-        case 6:
-            return _slot7Count;
-            
-        case 7:
-            return _slot8Count;
-            
-        case 8:
-            return _slot9Count;
-            
-        case 9:
-            return _slot10Count;
-            
-        case 10:
-            return _slot11Count;
-            
-        case 11:
-            return _slot12Count;
-            
-        case 12:
-            return _slot13Count;
-            
-        case 13:
-            return _slot14Count;
-            
-        case 14:
-            return _slot15Count;
-            
-        case 15:
-            return _slot16Count;
-            
-        case 16:
-            return _slot17Count;
-            
-        case 17:
-            return _slot18Count;
-            
-        case 18:
-            return _slot19Count;
-            
-        case 19:
-            return _slot20Count;
-            
-        case 20:
-            return _slot21Count;
-            
-        case 21:
-            return _slot22Count;
-            
-        case 22:
-            return _slot23Count;
-            
-        case 23:
-            return _slot24Count;
-            
-        case 24:
-            return _slot25Count;
-            
-        case 25:
-            return _slot26Count;
-            
-        case 26:
-            return _slot27Count;
-            
-        case 27:
-            return _slot28Count;
-            
-        case 28:
-            return _slot29Count;
-            
-        case 29:
-            return _slot30Count;
-            
-        default:
-            return nil;
-    }
-}
-
-- (NSTextField*)getCardNameLabel:(int) slot
-{
-    switch(slot)
-    {
-        case 0:
-            return _slot1Label;
-            
-        case 1:
-            return _slot2Label;
-            
-        case 2:
-            return _slot3Label;
-            
-        case 3:
-            return _slot4Label;
-            
-        case 4:
-            return _slot5Label;
-            
-        case 5:
-            return _slot6Label;
-            
-        case 6:
-            return _slot7Label;
-            
-        case 7:
-            return _slot8Label;
-            
-        case 8:
-            return _slot9Label;
-            
-        case 9:
-            return _slot10Label;
-            
-        case 10:
-            return _slot11Label;
-            
-        case 11:
-            return _slot12Label;
-            
-        case 12:
-            return _slot13Label;
-            
-        case 13:
-            return _slot14Label;
-            
-        case 14:
-            return _slot15Label;
-            
-        case 15:
-            return _slot16Label;
-            
-        case 16:
-            return _slot17Label;
-            
-        case 17:
-            return _slot18Label;
-            
-        case 18:
-            return _slot19Label;
-            
-        case 19:
-            return _slot20Label;
-            
-        case 20:
-            return _slot21Label;
-            
-        case 21:
-            return _slot22Label;
-            
-        case 22:
-            return _slot23Label;
-            
-        case 23:
-            return _slot24Label;
-            
-        case 24:
-            return _slot25Label;
-            
-        case 25:
-            return _slot26Label;
-            
-        case 26:
-            return _slot27Label;
-            
-        case 27:
-            return _slot28Label;
-            
-        case 28:
-            return _slot29Label;
-            
-        case 29:
-            return _slot30Label;
-            
-        default:
-            return nil;
-    }
-}
-
-- (NSTextField*)getCardCostLabel:(int) slot
-{
-    switch(slot)
-    {
-        case 0:
-            return _slot1Cost;
-            
-        case 1:
-            return _slot2Cost;
-            
-        case 2:
-            return _slot3Cost;
-            
-        case 3:
-            return _slot4Cost;
-            
-        case 4:
-            return _slot5Cost;
-            
-        case 5:
-            return _slot6Cost;
-            
-        case 6:
-            return _slot7Cost;
-            
-        case 7:
-            return _slot8Cost;
-            
-        case 8:
-            return _slot9Cost;
-            
-        case 9:
-            return _slot10Cost;
-            
-        case 10:
-            return _slot11Cost;
-            
-        case 11:
-            return _slot12Cost;
-            
-        case 12:
-            return _slot13Cost;
-            
-        case 13:
-            return _slot14Cost;
-            
-        case 14:
-            return _slot15Cost;
-            
-        case 15:
-            return _slot16Cost;
-            
-        case 16:
-            return _slot17Cost;
-            
-        case 17:
-            return _slot18Cost;
-            
-        case 18:
-            return _slot19Cost;
-            
-        case 19:
-            return _slot20Cost;
-            
-        case 20:
-            return _slot21Cost;
-            
-        case 21:
-            return _slot22Cost;
-            
-        case 22:
-            return _slot23Cost;
-            
-        case 23:
-            return _slot24Cost;
-            
-        case 24:
-            return _slot25Cost;
-            
-        case 25:
-            return _slot26Cost;
-            
-        case 26:
-            return _slot27Cost;
-            
-        case 27:
-            return _slot28Cost;
-            
-        case 28:
-            return _slot29Cost;
-            
-        case 29:
-            return _slot30Cost;
-            
-        default:
-            return nil;
+        Slot* slot = [[Slot alloc] init];
+        
+        // add card image
+        slot.slotImage = [[NSImageView alloc] initWithFrame:templateSlot.slotImage.frame];
+        [slot.slotImage setImage:[NSImage imageNamed:@"abomination.png"]];
+        [self addSubview:slot.slotImage];
+        [slot.slotImage setBounds:templateSlot.slotImage.bounds];
+        [slot.slotImage setFrameOrigin:NSMakePoint(templateSlot.slotImage.frame.origin.x, templateSlot.slotImage.frame.origin.y - (yOffset*i))];
+        slot.slotImage.imageAlignment = templateSlot.slotImage.imageAlignment;
+        [slot.slotImage setImageScaling:templateSlot.slotImage.imageScaling];
+        [slot.slotImage display];
+        
+        // add slot background
+        slot.slotBackground = [[NSImageView alloc] initWithFrame:templateSlot.slotBackground.frame];
+        [slot.slotBackground setImage:[NSImage imageNamed:@"cardBack.png"]];
+        [self addSubview:slot.slotBackground];
+        [slot.slotBackground setBounds:templateSlot.slotBackground.bounds];
+        [slot.slotBackground setFrameOrigin:NSMakePoint(templateSlot.slotBackground.frame.origin.x, templateSlot.slotBackground.frame.origin.y - (yOffset*i))];
+        slot.slotBackground.imageAlignment = templateSlot.slotBackground.imageAlignment;
+        [slot.slotBackground setImageScaling:templateSlot.slotBackground.imageScaling];
+        [slot.slotBackground display];
+        
+        // add count background
+        slot.slotCountBackground = [[NSImageView alloc] initWithFrame:templateSlot.slotCountBackground.frame];
+        [slot.slotCountBackground setImage:[NSImage imageNamed:@"frame_countbox.png"]];
+        [self addSubview:slot.slotCountBackground];
+        [slot.slotCountBackground setBounds:templateSlot.slotCountBackground.bounds];
+        [slot.slotCountBackground setFrameOrigin:NSMakePoint(templateSlot.slotCountBackground.frame.origin.x, templateSlot.slotCountBackground.frame.origin.y - (yOffset*i))];
+        slot.slotCountBackground.imageAlignment = templateSlot.slotCountBackground.imageAlignment;
+        [slot.slotCountBackground setImageScaling:templateSlot.slotCountBackground.imageScaling];
+        [slot.slotCountBackground display];
+        
+        // add count
+        slot.slotCount = [[NSImageView alloc] initWithFrame:templateSlot.slotCount.frame];
+        [slot.slotCount setImage:[NSImage imageNamed:@"frame_2.png"]];
+        [self addSubview:slot.slotCount];
+        [slot.slotCount setBounds:templateSlot.slotCount.bounds];
+        [slot.slotCount setFrameOrigin:NSMakePoint(templateSlot.slotCount.frame.origin.x, templateSlot.slotCount.frame.origin.y - (yOffset*i))];
+        slot.slotCount.imageAlignment = templateSlot.slotCount.imageAlignment;
+        [slot.slotCount setImageScaling:templateSlot.slotCount.imageScaling];
+        [slot.slotCount display];
+        
+        // add card name label
+        slot.slotLabel = [[NSTextField alloc] initWithFrame:templateSlot.slotLabel.frame];
+        [self addSubview:slot.slotLabel];
+        [slot.slotLabel setBounds:templateSlot.slotLabel.bounds];
+        [slot.slotLabel setFrameOrigin:NSMakePoint(templateSlot.slotLabel.frame.origin.x, templateSlot.slotLabel.frame.origin.y - (yOffset*i))];
+        [slot.slotLabel setAlignment:templateSlot.slotLabel.alignment];
+        [slot.slotLabel setStringValue:[NSString stringWithFormat:@"slot_%d", i]];
+        [slot.slotLabel setEditable:templateSlot.slotLabel.editable];
+        [slot.slotLabel setTextColor:templateSlot.slotLabel.textColor];
+        [slot.slotLabel setBordered:templateSlot.slotLabel.bordered];
+        [slot.slotLabel setBackgroundColor:templateSlot.slotLabel.backgroundColor];
+        [slot.slotLabel setDrawsBackground:templateSlot.slotLabel.drawsBackground];
+        [slot.slotLabel setFont:templateSlot.slotLabel.font];
+        [slot.slotLabel display];
+        
+        // add cost label
+        slot.slotCost = [[NSTextField alloc] initWithFrame:templateSlot.slotCost.frame];
+        [self addSubview:slot.slotCost];
+        [slot.slotCost setBounds:templateSlot.slotCost.bounds];
+        [slot.slotCost setFrameOrigin:NSMakePoint(templateSlot.slotCost.frame.origin.x, templateSlot.slotCost.frame.origin.y - (yOffset*i))];
+        [slot.slotCost setAlignment:templateSlot.slotCost.alignment];
+        [slot.slotCost setStringValue:[NSString stringWithFormat:@"1"]];
+        [slot.slotCost setEditable:templateSlot.slotCost.editable];
+        [slot.slotCost setTextColor:templateSlot.slotCost.textColor];
+        [slot.slotCost setBordered:templateSlot.slotCost.bordered];
+        [slot.slotCost setBackgroundColor:templateSlot.slotCost.backgroundColor];
+        [slot.slotCost setDrawsBackground:templateSlot.slotCost.drawsBackground];
+        [slot.slotCost setFont:templateSlot.slotCost.font];
+        [slot.slotCost display];
+        
+        opponentSlots[i] = slot;
     }
 }
 
 - (void)setSlotName:(int) slot name:(NSString*)name
 {
-    [[self getCardNameLabel:slot] setStringValue:name];
+    if (slot >= MaxSlots)
+    {
+        return;
+    }
+    
+    [((Slot*)opponentSlots[slot]).slotLabel setStringValue:name];
 }
 
 - (void)setSlotCost:(int) slot cost:(int)cost
 {
-    NSTextField* label = [self getCardCostLabel:slot];
-    
-    switch (cost)
+    if (slot >= MaxSlots)
     {
-        case 0:
-            [label setStringValue:@"0"];
-            break;
-            
-        case 1:
-            [label setStringValue:@"1"];
-            break;
-            
-        case 2:
-            [label setStringValue:@"2"];
-            break;
-            
-        case 3:
-            [label setStringValue:@"3"];
-            break;
-            
-        case 4:
-            [label setStringValue:@"4"];
-            break;
-            
-        case 5:
-            [label setStringValue:@"5"];
-            break;
-            
-        case 6:
-            [label setStringValue:@"6"];
-            break;
-            
-        case 7:
-            [label setStringValue:@"7"];
-            break;
-            
-        case 8:
-            [label setStringValue:@"8"];
-            break;
-            
-        case 9:
-            [label setStringValue:@"9"];
-            break;
-            
-        case 10:
-            [label setStringValue:@"10"];
-            break;
-            
-        default:
-            break;
+        return;
     }
+    
+    [((Slot*)opponentSlots[slot]).slotCost setStringValue:[NSString stringWithFormat:@"%d", cost]];
 }
 
 - (void)setSlotImage:(int) slot name:(NSString*)name
 {
+    if (slot >= MaxSlots)
+    {
+        return;
+    }
+    
     NSImage* newImage = [NSImage imageNamed:name];
-    NSImageView* imageView = [self getCardImage:slot];
     
     if (newImage)
     {
+        NSImageView* imageView = ((Slot*)opponentSlots[slot]).slotImage;
         [newImage setSize:imageView.image.size];
         [imageView setImage:newImage];
     }
@@ -533,41 +204,117 @@ const int MaxSlots = 30;
 
 - (void)setSlotCount:(int) slot count:(int)count
 {
+    if (slot >= MaxSlots)
+    {
+        return;
+    }
+    
     NSImage* newImage = nil;
-    NSImageView* imageView = [self getCardCountImage:slot];
     
     if (count == -1)
     {
         // special case for legendary
-        newImage = [NSImage imageNamed:@"cardBackL.png"];
+        newImage = [NSImage imageNamed:@"frame_legendary"];
     }
-    else if (count >= 0 && count <= 1)
+    else if (count >= 2 && count <= 8)
     {
-        newImage = [NSImage imageNamed:@"cardBack.png"];
+        NSString* imageName = [NSString stringWithFormat:@"frame_%d", count];
+        newImage = [NSImage imageNamed:imageName];
+    }
+    else if (count >= 9)
+    {
+        newImage = [NSImage imageNamed:@"frame_9.png"];
+    }
+    
+    NSImageView* imageView = ((Slot*)opponentSlots[slot]).slotCount;
+    NSImageView* countBackgroud = ((Slot*)opponentSlots[slot]).slotCountBackground;
+    
+    if (newImage)
+    {
+        [newImage setSize:imageView.image.size];
+        [imageView setImage:newImage];
+        [imageView setHidden:false];
+        [countBackgroud setHidden:false];
     }
     else
     {
-        // TODO: handle arena case for 3+
-        newImage = [NSImage imageNamed:@"cardBack2.png"];
+        // hide both count background and count
+        [imageView setHidden:true];
+        [countBackgroud setHidden:true];
     }
-    
-    [newImage setSize:imageView.image.size];
-    [imageView setImage:newImage];
 }
 
 - (void)enableSlot:(int) slot enable:(bool)enable
 {
-    CGFloat alpha = 1.0;
-    
-    if (!enable)
+    if (slot >= MaxSlots)
     {
-        alpha = 0.0;
+        return;
     }
     
-    [self getCardImage:slot].alphaValue = alpha;
-    [self getCardCountImage:slot].alphaValue = alpha;
-    [self getCardNameLabel:slot].alphaValue = alpha;
-    [self getCardCostLabel:slot].alphaValue = alpha;
+    Slot* s = opponentSlots[slot];
+    
+    [s.slotImage setHidden:!enable];
+    [s.slotBackground setHidden:!enable];
+    [s.slotCount setHidden:!enable];
+    [s.slotCountBackground setHidden:!enable];
+    [s.slotLabel setHidden:!enable];
+    [s.slotCost setHidden:!enable];
+    [s.slotDim setHidden:!enable];
+    s.animationFrame = -1;
+    s.animating = false;
+    s.dimmed = false;
+}
+
+- (void)animateSlot:(int) slot
+{
+    if (slot >= MaxSlots)
+    {
+        return;
+    }
+    
+    Slot* s = opponentSlots[slot];
+    
+    if (s.animationFrame < 0)
+    {
+        s.animationFrame = 0;
+    }
+}
+
+- (void)updateAnimation
+{
+    bool isAnimating = false;
+    
+    for (int i=0; i<MaxSlots; ++i)
+    {
+        Slot* s = opponentSlots[i];
+        
+        if (s.animationFrame != -1)
+        {
+            s.animationFrame++;
+            isAnimating = true;
+            
+            if (s.animationFrame <= 30)
+            {
+                float alphaValue = (float) s.animationFrame / 30.0;
+                
+                s.slotImage.alphaValue = alphaValue;
+                s.slotCount.alphaValue = alphaValue;
+                s.slotCountBackground.alphaValue = alphaValue;
+                s.slotLabel.alphaValue = alphaValue;
+                s.slotCost.alphaValue = alphaValue;
+                isAnimating = true;
+            }
+            else
+            {
+                s.animationFrame = -1;
+            }
+        }
+    }
+    
+    if (isAnimating)
+    {
+        [self setNeedsDisplay:true];
+    }
 }
 
 @end

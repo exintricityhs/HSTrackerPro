@@ -30,25 +30,43 @@
 @end
 
 @implementation Options
-
-- (void) changeAlphaText:(int) value
 {
-    NSString* stringValue = [NSString stringWithFormat:@"%i", value];
-    [_alphaText setStringValue:stringValue];
+    NSString* DeckPathId;
+    NSString* LockWindowId;
 }
 
-- (void)windowDidLoad
+- (id)init
 {
-    [super windowDidLoad];
+    self = [super init];
     
-    [_alphaSlider setIntValue:sliderValue];
-    [self changeAlphaText:sliderValue];
+    if (self)
+    {
+        _SelfWindowName = @"HSSELFWindowPos";
+        _OppWindowName = @"HSOPPWindowPos";
+        DeckPathId = @"HSDeckPath";
+        LockWindowId = @"HSLockWindow";
+    }
+    return self;
 }
 
-- (IBAction)slidersMoved:(id)sender
+- (NSString*)getLastDeckPath
 {
-    sliderValue = [_alphaSlider intValue];
-    [self changeAlphaText:sliderValue];
+    return [[NSUserDefaults standardUserDefaults] stringForKey:DeckPathId];
+}
+
+- (void)setLastDeckPath:(NSString*) path;
+{
+    [[NSUserDefaults standardUserDefaults] setObject:path forKey:DeckPathId];
+}
+
+- (bool)getLocked
+{
+    return [[NSUserDefaults standardUserDefaults] boolForKey:LockWindowId];
+}
+
+- (void)setLocked:(bool)lock
+{
+    [[NSUserDefaults standardUserDefaults] setBool:lock forKey:LockWindowId];
 }
 
 @end

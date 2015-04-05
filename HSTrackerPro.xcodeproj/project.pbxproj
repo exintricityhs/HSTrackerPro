@@ -678,6 +678,126 @@
 		B61E2CCE1A951005000CA1FC /* ysera.png in Resources */ = {isa = PBXBuildFile; fileRef = B61E2A301A951005000CA1FC /* ysera.png */; };
 		B61E2CCF1A951005000CA1FC /* zombie-chow.png in Resources */ = {isa = PBXBuildFile; fileRef = B61E2A311A951005000CA1FC /* zombie-chow.png */; };
 		B62321C21A9AF873006D0AB1 /* frameHighlight.png in Resources */ = {isa = PBXBuildFile; fileRef = B62321C11A9AF873006D0AB1 /* frameHighlight.png */; };
+		B62E0DC61AC52FD400084F35 /* ImageRecognition.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B62E0DC41AC52FD400084F35 /* ImageRecognition.cpp */; };
+		B6A32CE51ACE75D000EBE480 /* abberation.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32C6E1ACE75CF00EBE480 /* abberation.png */; };
+		B6A32CE61ACE75D000EBE480 /* activate-arcanotron.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32C6F1ACE75CF00EBE480 /* activate-arcanotron.png */; };
+		B6A32CE71ACE75D000EBE480 /* activate-electron.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32C701ACE75CF00EBE480 /* activate-electron.png */; };
+		B6A32CE81ACE75D000EBE480 /* activate-magmatron.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32C711ACE75CF00EBE480 /* activate-magmatron.png */; };
+		B6A32CE91ACE75D000EBE480 /* activate-toxitron.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32C721ACE75CF00EBE480 /* activate-toxitron.png */; };
+		B6A32CEA1ACE75D000EBE480 /* activate.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32C731ACE75CF00EBE480 /* activate.png */; };
+		B6A32CEB1ACE75D000EBE480 /* arcanotron.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32C741ACE75CF00EBE480 /* arcanotron.png */; };
+		B6A32CEC1ACE75D000EBE480 /* axe-flinger.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32C751ACE75CF00EBE480 /* axe-flinger.png */; };
+		B6A32CED1ACE75D000EBE480 /* black-whelp.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32C761ACE75CF00EBE480 /* black-whelp.png */; };
+		B6A32CEE1ACE75D000EBE480 /* blackwing-corruptor.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32C771ACE75CF00EBE480 /* blackwing-corruptor.png */; };
+		B6A32CEF1ACE75D000EBE480 /* blackwing-technician.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32C781ACE75CF00EBE480 /* blackwing-technician.png */; };
+		B6A32CF01ACE75D000EBE480 /* blackwing.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32C791ACE75CF00EBE480 /* blackwing.png */; };
+		B6A32CF11ACE75D000EBE480 /* bone-construct.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32C7A1ACE75CF00EBE480 /* bone-construct.png */; };
+		B6A32CF21ACE75D000EBE480 /* brood-afflicition-black.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32C7B1ACE75CF00EBE480 /* brood-afflicition-black.png */; };
+		B6A32CF31ACE75D000EBE480 /* brood-afflicition-blue.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32C7C1ACE75CF00EBE480 /* brood-afflicition-blue.png */; };
+		B6A32CF41ACE75D000EBE480 /* brood-afflicition-bronze.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32C7D1ACE75CF00EBE480 /* brood-afflicition-bronze.png */; };
+		B6A32CF51ACE75D000EBE480 /* brood-afflicition-green.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32C7E1ACE75CF00EBE480 /* brood-afflicition-green.png */; };
+		B6A32CF61ACE75D000EBE480 /* brood-afflicition-red.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32C7F1ACE75CF00EBE480 /* brood-afflicition-red.png */; };
+		B6A32CF71ACE75D000EBE480 /* brood-afflicition.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32C801ACE75CF00EBE480 /* brood-afflicition.png */; };
+		B6A32CF81ACE75D000EBE480 /* burning-adrenaline.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32C811ACE75CF00EBE480 /* burning-adrenaline.png */; };
+		B6A32CF91ACE75D000EBE480 /* chromaggus.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32C821ACE75CF00EBE480 /* chromaggus.png */; };
+		B6A32CFA1ACE75D000EBE480 /* chromatic-dragonkin.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32C831ACE75CF00EBE480 /* chromatic-dragonkin.png */; };
+		B6A32CFB1ACE75D000EBE480 /* chromatic-drake.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32C841ACE75CF00EBE480 /* chromatic-drake.png */; };
+		B6A32CFC1ACE75D000EBE480 /* chromatic-mutation.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32C851ACE75CF00EBE480 /* chromatic-mutation.png */; };
+		B6A32CFD1ACE75D000EBE480 /* chromatic-prototype.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32C861ACE75CF00EBE480 /* chromatic-prototype.png */; };
+		B6A32CFE1ACE75D000EBE480 /* core-rager.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32C871ACE75CF00EBE480 /* core-rager.png */; };
+		B6A32CFF1ACE75D000EBE480 /* corrupted-egg.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32C881ACE75CF00EBE480 /* corrupted-egg.png */; };
+		B6A32D001ACE75D000EBE480 /* dark-iron-bouncer.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32C891ACE75CF00EBE480 /* dark-iron-bouncer.png */; };
+		B6A32D011ACE75D000EBE480 /* dark-iron-skulker.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32C8A1ACE75CF00EBE480 /* dark-iron-skulker.png */; };
+		B6A32D021ACE75D000EBE480 /* dark-iron-spectator.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32C8B1ACE75CF00EBE480 /* dark-iron-spectator.png */; };
+		B6A32D031ACE75D000EBE480 /* demonwrath.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32C8C1ACE75CF00EBE480 /* demonwrath.png */; };
+		B6A32D041ACE75D000EBE480 /* die-insect.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32C8D1ACE75CF00EBE480 /* die-insect.png */; };
+		B6A32D051ACE75D000EBE480 /* dismount.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32C8E1ACE75CF00EBE480 /* dismount.png */; };
+		B6A32D061ACE75D000EBE480 /* dragon-consort.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32C8F1ACE75CF00EBE480 /* dragon-consort.png */; };
+		B6A32D071ACE75D000EBE480 /* dragon-egg.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32C901ACE75CF00EBE480 /* dragon-egg.png */; };
+		B6A32D081ACE75D000EBE480 /* dragon-s-breath.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32C911ACE75CF00EBE480 /* dragon-s-breath.png */; };
+		B6A32D091ACE75D000EBE480 /* dragonkin-sorcerer.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32C921ACE75CF00EBE480 /* dragonkin-sorcerer.png */; };
+		B6A32D0A1ACE75D000EBE480 /* dragonkin.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32C931ACE75CF00EBE480 /* dragonkin.png */; };
+		B6A32D0B1ACE75D000EBE480 /* dragonteeth.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32C941ACE75CF00EBE480 /* dragonteeth.png */; };
+		B6A32D0C1ACE75D000EBE480 /* drakkisath-s-command.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32C951ACE75CF00EBE480 /* drakkisath-s-command.png */; };
+		B6A32D0D1ACE75D000EBE480 /* drakonid-crusher.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32C961ACE75CF00EBE480 /* drakonid-crusher.png */; };
+		B6A32D0E1ACE75D000EBE480 /* druid-of-the-flame_2.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32C971ACE75CF00EBE480 /* druid-of-the-flame_2.png */; };
+		B6A32D0F1ACE75D000EBE480 /* druid-of-the-flame_3.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32C981ACE75CF00EBE480 /* druid-of-the-flame_3.png */; };
+		B6A32D101ACE75D000EBE480 /* druid-of-the-flame.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32C991ACE75CF00EBE480 /* druid-of-the-flame.png */; };
+		B6A32D111ACE75D000EBE480 /* echolocate.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32C9A1ACE75CF00EBE480 /* echolocate.png */; };
+		B6A32D121ACE75D000EBE480 /* electron.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32C9B1ACE75CF00EBE480 /* electron.png */; };
+		B6A32D131ACE75D000EBE480 /* emperor-thaurissan.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32C9C1ACE75CF00EBE480 /* emperor-thaurissan.png */; };
+		B6A32D141ACE75D000EBE480 /* essence-of-the-red.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32C9D1ACE75CF00EBE480 /* essence-of-the-red.png */; };
+		B6A32D151ACE75D000EBE480 /* fire-hawk-form.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32C9E1ACE75CF00EBE480 /* fire-hawk-form.png */; };
+		B6A32D161ACE75D000EBE480 /* firecat-form.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32C9F1ACE75CF00EBE480 /* firecat-form.png */; };
+		B6A32D171ACE75D000EBE480 /* fireguard-destroyer.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32CA01ACE75CF00EBE480 /* fireguard-destroyer.png */; };
+		B6A32D181ACE75D000EBE480 /* firesworn.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32CA11ACE75CF00EBE480 /* firesworn.png */; };
+		B6A32D191ACE75D000EBE480 /* flameheart.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32CA21ACE75CF00EBE480 /* flameheart.png */; };
+		B6A32D1A1ACE75D000EBE480 /* flamewaker-acolyte.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32CA31ACE75CF00EBE480 /* flamewaker-acolyte.png */; };
+		B6A32D1B1ACE75D000EBE480 /* flamewaker.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32CA41ACE75CF00EBE480 /* flamewaker.png */; };
+		B6A32D1C1ACE75D000EBE480 /* frame_neg1.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32CA51ACE75CF00EBE480 /* frame_neg1.png */; };
+		B6A32D1D1ACE75D000EBE480 /* frame_neg2.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32CA61ACE75CF00EBE480 /* frame_neg2.png */; };
+		B6A32D1E1ACE75D000EBE480 /* frame_neg3.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32CA71ACE75CF00EBE480 /* frame_neg3.png */; };
+		B6A32D1F1ACE75D000EBE480 /* frame_neg4.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32CA81ACE75CF00EBE480 /* frame_neg4.png */; };
+		B6A32D201ACE75D000EBE480 /* frame_neg5.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32CA91ACE75D000EBE480 /* frame_neg5.png */; };
+		B6A32D211ACE75D000EBE480 /* frame_neg7.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32CAA1ACE75D000EBE480 /* frame_neg7.png */; };
+		B6A32D221ACE75D000EBE480 /* frame_neg8.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32CAB1ACE75D000EBE480 /* frame_neg8.png */; };
+		B6A32D231ACE75D000EBE480 /* frame_neg9.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32CAC1ACE75D000EBE480 /* frame_neg9.png */; };
+		B6A32D241ACE75D000EBE480 /* gang-up.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32CAD1ACE75D000EBE480 /* gang-up.png */; };
+		B6A32D251ACE75D000EBE480 /* get--em.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32CAE1ACE75D000EBE480 /* get--em.png */; };
+		B6A32D261ACE75D000EBE480 /* grim-patron.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32CAF1ACE75D000EBE480 /* grim-patron.png */; };
+		B6A32D271ACE75D000EBE480 /* guzzler.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32CB01ACE75D000EBE480 /* guzzler.png */; };
+		B6A32D281ACE75D000EBE480 /* gyth.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32CB11ACE75D000EBE480 /* gyth.png */; };
+		B6A32D291ACE75D000EBE480 /* hungry-dragon.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32CB21ACE75D000EBE480 /* hungry-dragon.png */; };
+		B6A32D2A1ACE75D000EBE480 /* ignite-mana.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32CB31ACE75D000EBE480 /* ignite-mana.png */; };
+		B6A32D2B1ACE75D000EBE480 /* imp-gang-boss.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32CB41ACE75D000EBE480 /* imp-gang-boss.png */; };
+		B6A32D2C1ACE75D000EBE480 /* intense-gaze.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32CB51ACE75D000EBE480 /* intense-gaze.png */; };
+		B6A32D2D1ACE75D000EBE480 /* jeering-crowd.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32CB61ACE75D000EBE480 /* jeering-crowd.png */; };
+		B6A32D2E1ACE75D000EBE480 /* lava-shock.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32CB71ACE75D000EBE480 /* lava-shock.png */; };
+		B6A32D2F1ACE75D000EBE480 /* lava.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32CB81ACE75D000EBE480 /* lava.png */; };
+		B6A32D301ACE75D000EBE480 /* living-bomb.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32CB91ACE75D000EBE480 /* living-bomb.png */; };
+		B6A32D311ACE75D000EBE480 /* living-lava.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32CBA1ACE75D000EBE480 /* living-lava.png */; };
+		B6A32D321ACE75D000EBE480 /* magma-pulse.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32CBB1ACE75D000EBE480 /* magma-pulse.png */; };
+		B6A32D331ACE75D000EBE480 /* magmatron.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32CBC1ACE75D000EBE480 /* magmatron.png */; };
+		B6A32D341ACE75D000EBE480 /* magmaw.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32CBD1ACE75D000EBE480 /* magmaw.png */; };
+		B6A32D351ACE75D000EBE480 /* majordomo-executus.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32CBE1ACE75D000EBE480 /* majordomo-executus.png */; };
+		B6A32D361ACE75D000EBE480 /* me-smash.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32CBF1ACE75D000EBE480 /* me-smash.png */; };
+		B6A32D371ACE75D000EBE480 /* moira-bronzebeard.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32CC01ACE75D000EBE480 /* moira-bronzebeard.png */; };
+		B6A32D381ACE75D000EBE480 /* mutation.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32CC11ACE75D000EBE480 /* mutation.png */; };
+		B6A32D391ACE75D000EBE480 /* nefarian-strikes.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32CC21ACE75D000EBE480 /* nefarian-strikes.png */; };
+		B6A32D3A1ACE75D000EBE480 /* nefarian.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32CC31ACE75D000EBE480 /* nefarian.png */; };
+		B6A32D3B1ACE75D000EBE480 /* old-horde-orc.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32CC41ACE75D000EBE480 /* old-horde-orc.png */; };
+		B6A32D3C1ACE75D000EBE480 /* old-horde.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32CC51ACE75D000EBE480 /* old-horde.png */; };
+		B6A32D3D1ACE75D000EBE480 /* onyxiclaw.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32CC61ACE75D000EBE480 /* onyxiclaw.png */; };
+		B6A32D3E1ACE75D000EBE480 /* open-the-gates.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32CC71ACE75D000EBE480 /* open-the-gates.png */; };
+		B6A32D3F1ACE75D000EBE480 /* pile-on.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32CC81ACE75D000EBE480 /* pile-on.png */; };
+		B6A32D401ACE75D000EBE480 /* power-of-the-firelord.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32CC91ACE75D000EBE480 /* power-of-the-firelord.png */; };
+		B6A32D411ACE75D000EBE480 /* quick-shot.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32CCA1ACE75D000EBE480 /* quick-shot.png */; };
+		B6A32D421ACE75D000EBE480 /* razorgore-s-claws.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32CCB1ACE75D000EBE480 /* razorgore-s-claws.png */; };
+		B6A32D431ACE75D000EBE480 /* recharge.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32CCC1ACE75D000EBE480 /* recharge.png */; };
+		B6A32D441ACE75D000EBE480 /* release-the-aberrations.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32CCD1ACE75D000EBE480 /* release-the-aberrations.png */; };
+		B6A32D451ACE75D000EBE480 /* rend-blackhand.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32CCE1ACE75D000EBE480 /* rend-blackhand.png */; };
+		B6A32D461ACE75D000EBE480 /* resurrect.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32CCF1ACE75D000EBE480 /* resurrect.png */; };
+		B6A32D471ACE75D000EBE480 /* revenge.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32CD01ACE75D000EBE480 /* revenge.png */; };
+		B6A32D481ACE75D000EBE480 /* reverberating-gong.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32CD11ACE75D000EBE480 /* reverberating-gong.png */; };
+		B6A32D491ACE75D000EBE480 /* rock-out.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32CD21ACE75D000EBE480 /* rock-out.png */; };
+		B6A32D4A1ACE75D000EBE480 /* rogues-do-it.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32CD31ACE75D000EBE480 /* rogues-do-it.png */; };
+		B6A32D4B1ACE75D000EBE480 /* solemn-vigil.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32CD41ACE75D000EBE480 /* solemn-vigil.png */; };
+		B6A32D4C1ACE75D000EBE480 /* son-of-the-flame.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32CD51ACE75D000EBE480 /* son-of-the-flame.png */; };
+		B6A32D4D1ACE75D000EBE480 /* sonic-breath.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32CD61ACE75D000EBE480 /* sonic-breath.png */; };
+		B6A32D4E1ACE75D000EBE480 /* tail-swipe.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32CD71ACE75D000EBE480 /* tail-swipe.png */; };
+		B6A32D4F1ACE75D000EBE480 /* the-alchemist.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32CD81ACE75D000EBE480 /* the-alchemist.png */; };
+		B6A32D501ACE75D000EBE480 /* the-majordomo.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32CD91ACE75D000EBE480 /* the-majordomo.png */; };
+		B6A32D511ACE75D000EBE480 /* the-rookery.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32CDA1ACE75D000EBE480 /* the-rookery.png */; };
+		B6A32D521ACE75D000EBE480 /* the-true-warchief.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32CDB1ACE75D000EBE480 /* the-true-warchief.png */; };
+		B6A32D531ACE75D000EBE480 /* time-for-smash.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32CDC1ACE75D000EBE480 /* time-for-smash.png */; };
+		B6A32D541ACE75D000EBE480 /* toxitron.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32CDD1ACE75D000EBE480 /* toxitron.png */; };
+		B6A32D551ACE75D000EBE480 /* true-form.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32CDE1ACE75D000EBE480 /* true-form.png */; };
+		B6A32D561ACE75D000EBE480 /* twilight-whelp.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32CDF1ACE75D000EBE480 /* twilight-whelp.png */; };
+		B6A32D571ACE75D000EBE480 /* volcanic-drake.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32CE01ACE75D000EBE480 /* volcanic-drake.png */; };
+		B6A32D581ACE75D000EBE480 /* volcanic-lumberer.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32CE11ACE75D000EBE480 /* volcanic-lumberer.png */; };
+		B6A32D591ACE75D000EBE480 /* whelp_2.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32CE21ACE75D000EBE480 /* whelp_2.png */; };
+		B6A32D5A1ACE75D000EBE480 /* whirling-ash.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32CE31ACE75D000EBE480 /* whirling-ash.png */; };
+		B6A32D5B1ACE75D000EBE480 /* wild-magic.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A32CE41ACE75D000EBE480 /* wild-magic.png */; };
 		B6A7E1621AB15FC200364147 /* OpponentWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A7E1601AB15FC200364147 /* OpponentWindow.m */; };
 		B6A7E1671AB1679000364147 /* OpponentWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6A7E1661AB1679000364147 /* OpponentWindow.xib */; };
 		B6A7E16A1AB1698300364147 /* OpponentView.mm in Sources */ = {isa = PBXBuildFile; fileRef = B6A7E1691AB1698300364147 /* OpponentView.mm */; };
@@ -690,7 +810,6 @@
 		B6EB5CDE1A7476EA00DC03C1 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = B6EB5CDD1A7476EA00DC03C1 /* main.mm */; };
 		B6EB5CE21A7476FF00DC03C1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EB5CE11A7476FF00DC03C1 /* AppDelegate.m */; };
 		B6F2A8BE1A96A63400B305D6 /* Options.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F2A8BC1A96A63400B305D6 /* Options.m */; };
-		B6F2A8BF1A96A63400B305D6 /* Options.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6F2A8BD1A96A63400B305D6 /* Options.xib */; };
 		B6F2A8C61A96BF6900B305D6 /* Deck.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6F2A8C01A96BF6900B305D6 /* Deck.cpp */; };
 		B6F2A8C81A96BF6900B305D6 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6F2A8C41A96BF6900B305D6 /* Game.cpp */; };
 		B6F2A8CD1A96BF7500B305D6 /* PlayedCard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6F2A8C91A96BF7500B305D6 /* PlayedCard.cpp */; };
@@ -711,6 +830,7 @@
 		B6F2A8F01A96C0B600B305D6 /* cardsDB.ruRU.json in Resources */ = {isa = PBXBuildFile; fileRef = B6F2A8E21A96C0B600B305D6 /* cardsDB.ruRU.json */; };
 		B6F2A8F11A96C0B600B305D6 /* cardsDB.zhCN.json in Resources */ = {isa = PBXBuildFile; fileRef = B6F2A8E31A96C0B600B305D6 /* cardsDB.zhCN.json */; };
 		B6F2A8F21A96C0B600B305D6 /* cardsDB.zhTW.json in Resources */ = {isa = PBXBuildFile; fileRef = B6F2A8E41A96C0B600B305D6 /* cardsDB.zhTW.json */; };
+		B6F469221ABAA2BA004B1F01 /* Slot.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F469211ABAA2BA004B1F01 /* Slot.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -1385,7 +1505,128 @@
 		B61E2A301A951005000CA1FC /* ysera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ysera.png; path = images/ysera.png; sourceTree = "<group>"; };
 		B61E2A311A951005000CA1FC /* zombie-chow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "zombie-chow.png"; path = "images/zombie-chow.png"; sourceTree = "<group>"; };
 		B62321C11A9AF873006D0AB1 /* frameHighlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = frameHighlight.png; path = images/frameHighlight.png; sourceTree = "<group>"; };
+		B62E0DC41AC52FD400084F35 /* ImageRecognition.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ImageRecognition.cpp; path = HSTracker/src/util/ImageRecognition.cpp; sourceTree = SOURCE_ROOT; };
+		B62E0DC51AC52FD400084F35 /* ImageRecognition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageRecognition.h; path = HSTracker/src/util/ImageRecognition.h; sourceTree = SOURCE_ROOT; };
 		B68599921AB5642F00B52E07 /* Logger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Logger.h; sourceTree = "<group>"; };
+		B6A32C6E1ACE75CF00EBE480 /* abberation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = abberation.png; path = images/abberation.png; sourceTree = "<group>"; };
+		B6A32C6F1ACE75CF00EBE480 /* activate-arcanotron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "activate-arcanotron.png"; path = "images/activate-arcanotron.png"; sourceTree = "<group>"; };
+		B6A32C701ACE75CF00EBE480 /* activate-electron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "activate-electron.png"; path = "images/activate-electron.png"; sourceTree = "<group>"; };
+		B6A32C711ACE75CF00EBE480 /* activate-magmatron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "activate-magmatron.png"; path = "images/activate-magmatron.png"; sourceTree = "<group>"; };
+		B6A32C721ACE75CF00EBE480 /* activate-toxitron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "activate-toxitron.png"; path = "images/activate-toxitron.png"; sourceTree = "<group>"; };
+		B6A32C731ACE75CF00EBE480 /* activate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = activate.png; path = images/activate.png; sourceTree = "<group>"; };
+		B6A32C741ACE75CF00EBE480 /* arcanotron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = arcanotron.png; path = images/arcanotron.png; sourceTree = "<group>"; };
+		B6A32C751ACE75CF00EBE480 /* axe-flinger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "axe-flinger.png"; path = "images/axe-flinger.png"; sourceTree = "<group>"; };
+		B6A32C761ACE75CF00EBE480 /* black-whelp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "black-whelp.png"; path = "images/black-whelp.png"; sourceTree = "<group>"; };
+		B6A32C771ACE75CF00EBE480 /* blackwing-corruptor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "blackwing-corruptor.png"; path = "images/blackwing-corruptor.png"; sourceTree = "<group>"; };
+		B6A32C781ACE75CF00EBE480 /* blackwing-technician.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "blackwing-technician.png"; path = "images/blackwing-technician.png"; sourceTree = "<group>"; };
+		B6A32C791ACE75CF00EBE480 /* blackwing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blackwing.png; path = images/blackwing.png; sourceTree = "<group>"; };
+		B6A32C7A1ACE75CF00EBE480 /* bone-construct.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bone-construct.png"; path = "images/bone-construct.png"; sourceTree = "<group>"; };
+		B6A32C7B1ACE75CF00EBE480 /* brood-afflicition-black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "brood-afflicition-black.png"; path = "images/brood-afflicition-black.png"; sourceTree = "<group>"; };
+		B6A32C7C1ACE75CF00EBE480 /* brood-afflicition-blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "brood-afflicition-blue.png"; path = "images/brood-afflicition-blue.png"; sourceTree = "<group>"; };
+		B6A32C7D1ACE75CF00EBE480 /* brood-afflicition-bronze.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "brood-afflicition-bronze.png"; path = "images/brood-afflicition-bronze.png"; sourceTree = "<group>"; };
+		B6A32C7E1ACE75CF00EBE480 /* brood-afflicition-green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "brood-afflicition-green.png"; path = "images/brood-afflicition-green.png"; sourceTree = "<group>"; };
+		B6A32C7F1ACE75CF00EBE480 /* brood-afflicition-red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "brood-afflicition-red.png"; path = "images/brood-afflicition-red.png"; sourceTree = "<group>"; };
+		B6A32C801ACE75CF00EBE480 /* brood-afflicition.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "brood-afflicition.png"; path = "images/brood-afflicition.png"; sourceTree = "<group>"; };
+		B6A32C811ACE75CF00EBE480 /* burning-adrenaline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "burning-adrenaline.png"; path = "images/burning-adrenaline.png"; sourceTree = "<group>"; };
+		B6A32C821ACE75CF00EBE480 /* chromaggus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = chromaggus.png; path = images/chromaggus.png; sourceTree = "<group>"; };
+		B6A32C831ACE75CF00EBE480 /* chromatic-dragonkin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "chromatic-dragonkin.png"; path = "images/chromatic-dragonkin.png"; sourceTree = "<group>"; };
+		B6A32C841ACE75CF00EBE480 /* chromatic-drake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "chromatic-drake.png"; path = "images/chromatic-drake.png"; sourceTree = "<group>"; };
+		B6A32C851ACE75CF00EBE480 /* chromatic-mutation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "chromatic-mutation.png"; path = "images/chromatic-mutation.png"; sourceTree = "<group>"; };
+		B6A32C861ACE75CF00EBE480 /* chromatic-prototype.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "chromatic-prototype.png"; path = "images/chromatic-prototype.png"; sourceTree = "<group>"; };
+		B6A32C871ACE75CF00EBE480 /* core-rager.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "core-rager.png"; path = "images/core-rager.png"; sourceTree = "<group>"; };
+		B6A32C881ACE75CF00EBE480 /* corrupted-egg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "corrupted-egg.png"; path = "images/corrupted-egg.png"; sourceTree = "<group>"; };
+		B6A32C891ACE75CF00EBE480 /* dark-iron-bouncer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dark-iron-bouncer.png"; path = "images/dark-iron-bouncer.png"; sourceTree = "<group>"; };
+		B6A32C8A1ACE75CF00EBE480 /* dark-iron-skulker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dark-iron-skulker.png"; path = "images/dark-iron-skulker.png"; sourceTree = "<group>"; };
+		B6A32C8B1ACE75CF00EBE480 /* dark-iron-spectator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dark-iron-spectator.png"; path = "images/dark-iron-spectator.png"; sourceTree = "<group>"; };
+		B6A32C8C1ACE75CF00EBE480 /* demonwrath.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = demonwrath.png; path = images/demonwrath.png; sourceTree = "<group>"; };
+		B6A32C8D1ACE75CF00EBE480 /* die-insect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "die-insect.png"; path = "images/die-insect.png"; sourceTree = "<group>"; };
+		B6A32C8E1ACE75CF00EBE480 /* dismount.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dismount.png; path = images/dismount.png; sourceTree = "<group>"; };
+		B6A32C8F1ACE75CF00EBE480 /* dragon-consort.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dragon-consort.png"; path = "images/dragon-consort.png"; sourceTree = "<group>"; };
+		B6A32C901ACE75CF00EBE480 /* dragon-egg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dragon-egg.png"; path = "images/dragon-egg.png"; sourceTree = "<group>"; };
+		B6A32C911ACE75CF00EBE480 /* dragon-s-breath.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dragon-s-breath.png"; path = "images/dragon-s-breath.png"; sourceTree = "<group>"; };
+		B6A32C921ACE75CF00EBE480 /* dragonkin-sorcerer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dragonkin-sorcerer.png"; path = "images/dragonkin-sorcerer.png"; sourceTree = "<group>"; };
+		B6A32C931ACE75CF00EBE480 /* dragonkin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dragonkin.png; path = images/dragonkin.png; sourceTree = "<group>"; };
+		B6A32C941ACE75CF00EBE480 /* dragonteeth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dragonteeth.png; path = images/dragonteeth.png; sourceTree = "<group>"; };
+		B6A32C951ACE75CF00EBE480 /* drakkisath-s-command.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "drakkisath-s-command.png"; path = "images/drakkisath-s-command.png"; sourceTree = "<group>"; };
+		B6A32C961ACE75CF00EBE480 /* drakonid-crusher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "drakonid-crusher.png"; path = "images/drakonid-crusher.png"; sourceTree = "<group>"; };
+		B6A32C971ACE75CF00EBE480 /* druid-of-the-flame_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "druid-of-the-flame_2.png"; path = "images/druid-of-the-flame_2.png"; sourceTree = "<group>"; };
+		B6A32C981ACE75CF00EBE480 /* druid-of-the-flame_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "druid-of-the-flame_3.png"; path = "images/druid-of-the-flame_3.png"; sourceTree = "<group>"; };
+		B6A32C991ACE75CF00EBE480 /* druid-of-the-flame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "druid-of-the-flame.png"; path = "images/druid-of-the-flame.png"; sourceTree = "<group>"; };
+		B6A32C9A1ACE75CF00EBE480 /* echolocate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = echolocate.png; path = images/echolocate.png; sourceTree = "<group>"; };
+		B6A32C9B1ACE75CF00EBE480 /* electron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = electron.png; path = images/electron.png; sourceTree = "<group>"; };
+		B6A32C9C1ACE75CF00EBE480 /* emperor-thaurissan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "emperor-thaurissan.png"; path = "images/emperor-thaurissan.png"; sourceTree = "<group>"; };
+		B6A32C9D1ACE75CF00EBE480 /* essence-of-the-red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "essence-of-the-red.png"; path = "images/essence-of-the-red.png"; sourceTree = "<group>"; };
+		B6A32C9E1ACE75CF00EBE480 /* fire-hawk-form.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "fire-hawk-form.png"; path = "images/fire-hawk-form.png"; sourceTree = "<group>"; };
+		B6A32C9F1ACE75CF00EBE480 /* firecat-form.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "firecat-form.png"; path = "images/firecat-form.png"; sourceTree = "<group>"; };
+		B6A32CA01ACE75CF00EBE480 /* fireguard-destroyer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "fireguard-destroyer.png"; path = "images/fireguard-destroyer.png"; sourceTree = "<group>"; };
+		B6A32CA11ACE75CF00EBE480 /* firesworn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = firesworn.png; path = images/firesworn.png; sourceTree = "<group>"; };
+		B6A32CA21ACE75CF00EBE480 /* flameheart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = flameheart.png; path = images/flameheart.png; sourceTree = "<group>"; };
+		B6A32CA31ACE75CF00EBE480 /* flamewaker-acolyte.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "flamewaker-acolyte.png"; path = "images/flamewaker-acolyte.png"; sourceTree = "<group>"; };
+		B6A32CA41ACE75CF00EBE480 /* flamewaker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = flamewaker.png; path = images/flamewaker.png; sourceTree = "<group>"; };
+		B6A32CA51ACE75CF00EBE480 /* frame_neg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = frame_neg1.png; path = images/frame_neg1.png; sourceTree = "<group>"; };
+		B6A32CA61ACE75CF00EBE480 /* frame_neg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = frame_neg2.png; path = images/frame_neg2.png; sourceTree = "<group>"; };
+		B6A32CA71ACE75CF00EBE480 /* frame_neg3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = frame_neg3.png; path = images/frame_neg3.png; sourceTree = "<group>"; };
+		B6A32CA81ACE75CF00EBE480 /* frame_neg4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = frame_neg4.png; path = images/frame_neg4.png; sourceTree = "<group>"; };
+		B6A32CA91ACE75D000EBE480 /* frame_neg5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = frame_neg5.png; path = images/frame_neg5.png; sourceTree = "<group>"; };
+		B6A32CAA1ACE75D000EBE480 /* frame_neg7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = frame_neg7.png; path = images/frame_neg7.png; sourceTree = "<group>"; };
+		B6A32CAB1ACE75D000EBE480 /* frame_neg8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = frame_neg8.png; path = images/frame_neg8.png; sourceTree = "<group>"; };
+		B6A32CAC1ACE75D000EBE480 /* frame_neg9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = frame_neg9.png; path = images/frame_neg9.png; sourceTree = "<group>"; };
+		B6A32CAD1ACE75D000EBE480 /* gang-up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gang-up.png"; path = "images/gang-up.png"; sourceTree = "<group>"; };
+		B6A32CAE1ACE75D000EBE480 /* get--em.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "get--em.png"; path = "images/get--em.png"; sourceTree = "<group>"; };
+		B6A32CAF1ACE75D000EBE480 /* grim-patron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "grim-patron.png"; path = "images/grim-patron.png"; sourceTree = "<group>"; };
+		B6A32CB01ACE75D000EBE480 /* guzzler.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = guzzler.png; path = images/guzzler.png; sourceTree = "<group>"; };
+		B6A32CB11ACE75D000EBE480 /* gyth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gyth.png; path = images/gyth.png; sourceTree = "<group>"; };
+		B6A32CB21ACE75D000EBE480 /* hungry-dragon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hungry-dragon.png"; path = "images/hungry-dragon.png"; sourceTree = "<group>"; };
+		B6A32CB31ACE75D000EBE480 /* ignite-mana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ignite-mana.png"; path = "images/ignite-mana.png"; sourceTree = "<group>"; };
+		B6A32CB41ACE75D000EBE480 /* imp-gang-boss.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "imp-gang-boss.png"; path = "images/imp-gang-boss.png"; sourceTree = "<group>"; };
+		B6A32CB51ACE75D000EBE480 /* intense-gaze.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "intense-gaze.png"; path = "images/intense-gaze.png"; sourceTree = "<group>"; };
+		B6A32CB61ACE75D000EBE480 /* jeering-crowd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "jeering-crowd.png"; path = "images/jeering-crowd.png"; sourceTree = "<group>"; };
+		B6A32CB71ACE75D000EBE480 /* lava-shock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lava-shock.png"; path = "images/lava-shock.png"; sourceTree = "<group>"; };
+		B6A32CB81ACE75D000EBE480 /* lava.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lava.png; path = images/lava.png; sourceTree = "<group>"; };
+		B6A32CB91ACE75D000EBE480 /* living-bomb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "living-bomb.png"; path = "images/living-bomb.png"; sourceTree = "<group>"; };
+		B6A32CBA1ACE75D000EBE480 /* living-lava.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "living-lava.png"; path = "images/living-lava.png"; sourceTree = "<group>"; };
+		B6A32CBB1ACE75D000EBE480 /* magma-pulse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "magma-pulse.png"; path = "images/magma-pulse.png"; sourceTree = "<group>"; };
+		B6A32CBC1ACE75D000EBE480 /* magmatron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = magmatron.png; path = images/magmatron.png; sourceTree = "<group>"; };
+		B6A32CBD1ACE75D000EBE480 /* magmaw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = magmaw.png; path = images/magmaw.png; sourceTree = "<group>"; };
+		B6A32CBE1ACE75D000EBE480 /* majordomo-executus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "majordomo-executus.png"; path = "images/majordomo-executus.png"; sourceTree = "<group>"; };
+		B6A32CBF1ACE75D000EBE480 /* me-smash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "me-smash.png"; path = "images/me-smash.png"; sourceTree = "<group>"; };
+		B6A32CC01ACE75D000EBE480 /* moira-bronzebeard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "moira-bronzebeard.png"; path = "images/moira-bronzebeard.png"; sourceTree = "<group>"; };
+		B6A32CC11ACE75D000EBE480 /* mutation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mutation.png; path = images/mutation.png; sourceTree = "<group>"; };
+		B6A32CC21ACE75D000EBE480 /* nefarian-strikes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "nefarian-strikes.png"; path = "images/nefarian-strikes.png"; sourceTree = "<group>"; };
+		B6A32CC31ACE75D000EBE480 /* nefarian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nefarian.png; path = images/nefarian.png; sourceTree = "<group>"; };
+		B6A32CC41ACE75D000EBE480 /* old-horde-orc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "old-horde-orc.png"; path = "images/old-horde-orc.png"; sourceTree = "<group>"; };
+		B6A32CC51ACE75D000EBE480 /* old-horde.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "old-horde.png"; path = "images/old-horde.png"; sourceTree = "<group>"; };
+		B6A32CC61ACE75D000EBE480 /* onyxiclaw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = onyxiclaw.png; path = images/onyxiclaw.png; sourceTree = "<group>"; };
+		B6A32CC71ACE75D000EBE480 /* open-the-gates.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "open-the-gates.png"; path = "images/open-the-gates.png"; sourceTree = "<group>"; };
+		B6A32CC81ACE75D000EBE480 /* pile-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pile-on.png"; path = "images/pile-on.png"; sourceTree = "<group>"; };
+		B6A32CC91ACE75D000EBE480 /* power-of-the-firelord.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "power-of-the-firelord.png"; path = "images/power-of-the-firelord.png"; sourceTree = "<group>"; };
+		B6A32CCA1ACE75D000EBE480 /* quick-shot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "quick-shot.png"; path = "images/quick-shot.png"; sourceTree = "<group>"; };
+		B6A32CCB1ACE75D000EBE480 /* razorgore-s-claws.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "razorgore-s-claws.png"; path = "images/razorgore-s-claws.png"; sourceTree = "<group>"; };
+		B6A32CCC1ACE75D000EBE480 /* recharge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = recharge.png; path = images/recharge.png; sourceTree = "<group>"; };
+		B6A32CCD1ACE75D000EBE480 /* release-the-aberrations.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "release-the-aberrations.png"; path = "images/release-the-aberrations.png"; sourceTree = "<group>"; };
+		B6A32CCE1ACE75D000EBE480 /* rend-blackhand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "rend-blackhand.png"; path = "images/rend-blackhand.png"; sourceTree = "<group>"; };
+		B6A32CCF1ACE75D000EBE480 /* resurrect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = resurrect.png; path = images/resurrect.png; sourceTree = "<group>"; };
+		B6A32CD01ACE75D000EBE480 /* revenge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = revenge.png; path = images/revenge.png; sourceTree = "<group>"; };
+		B6A32CD11ACE75D000EBE480 /* reverberating-gong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "reverberating-gong.png"; path = "images/reverberating-gong.png"; sourceTree = "<group>"; };
+		B6A32CD21ACE75D000EBE480 /* rock-out.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "rock-out.png"; path = "images/rock-out.png"; sourceTree = "<group>"; };
+		B6A32CD31ACE75D000EBE480 /* rogues-do-it.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "rogues-do-it.png"; path = "images/rogues-do-it.png"; sourceTree = "<group>"; };
+		B6A32CD41ACE75D000EBE480 /* solemn-vigil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "solemn-vigil.png"; path = "images/solemn-vigil.png"; sourceTree = "<group>"; };
+		B6A32CD51ACE75D000EBE480 /* son-of-the-flame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "son-of-the-flame.png"; path = "images/son-of-the-flame.png"; sourceTree = "<group>"; };
+		B6A32CD61ACE75D000EBE480 /* sonic-breath.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "sonic-breath.png"; path = "images/sonic-breath.png"; sourceTree = "<group>"; };
+		B6A32CD71ACE75D000EBE480 /* tail-swipe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tail-swipe.png"; path = "images/tail-swipe.png"; sourceTree = "<group>"; };
+		B6A32CD81ACE75D000EBE480 /* the-alchemist.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "the-alchemist.png"; path = "images/the-alchemist.png"; sourceTree = "<group>"; };
+		B6A32CD91ACE75D000EBE480 /* the-majordomo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "the-majordomo.png"; path = "images/the-majordomo.png"; sourceTree = "<group>"; };
+		B6A32CDA1ACE75D000EBE480 /* the-rookery.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "the-rookery.png"; path = "images/the-rookery.png"; sourceTree = "<group>"; };
+		B6A32CDB1ACE75D000EBE480 /* the-true-warchief.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "the-true-warchief.png"; path = "images/the-true-warchief.png"; sourceTree = "<group>"; };
+		B6A32CDC1ACE75D000EBE480 /* time-for-smash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "time-for-smash.png"; path = "images/time-for-smash.png"; sourceTree = "<group>"; };
+		B6A32CDD1ACE75D000EBE480 /* toxitron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toxitron.png; path = images/toxitron.png; sourceTree = "<group>"; };
+		B6A32CDE1ACE75D000EBE480 /* true-form.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "true-form.png"; path = "images/true-form.png"; sourceTree = "<group>"; };
+		B6A32CDF1ACE75D000EBE480 /* twilight-whelp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "twilight-whelp.png"; path = "images/twilight-whelp.png"; sourceTree = "<group>"; };
+		B6A32CE01ACE75D000EBE480 /* volcanic-drake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "volcanic-drake.png"; path = "images/volcanic-drake.png"; sourceTree = "<group>"; };
+		B6A32CE11ACE75D000EBE480 /* volcanic-lumberer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "volcanic-lumberer.png"; path = "images/volcanic-lumberer.png"; sourceTree = "<group>"; };
+		B6A32CE21ACE75D000EBE480 /* whelp_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = whelp_2.png; path = images/whelp_2.png; sourceTree = "<group>"; };
+		B6A32CE31ACE75D000EBE480 /* whirling-ash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "whirling-ash.png"; path = "images/whirling-ash.png"; sourceTree = "<group>"; };
+		B6A32CE41ACE75D000EBE480 /* wild-magic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "wild-magic.png"; path = "images/wild-magic.png"; sourceTree = "<group>"; };
 		B6A7E15F1AB15FC200364147 /* OpponentWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpponentWindow.h; path = src/OpponentWindow.h; sourceTree = "<group>"; };
 		B6A7E1601AB15FC200364147 /* OpponentWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OpponentWindow.m; path = src/OpponentWindow.m; sourceTree = "<group>"; };
 		B6A7E1661AB1679000364147 /* OpponentWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OpponentWindow.xib; path = src/OpponentWindow.xib; sourceTree = "<group>"; };
@@ -1407,7 +1648,6 @@
 		B6EB5CE11A7476FF00DC03C1 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = src/AppDelegate.m; sourceTree = "<group>"; };
 		B6F2A8BB1A96A63400B305D6 /* Options.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Options.h; path = src/Options.h; sourceTree = "<group>"; };
 		B6F2A8BC1A96A63400B305D6 /* Options.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Options.m; path = src/Options.m; sourceTree = "<group>"; };
-		B6F2A8BD1A96A63400B305D6 /* Options.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Options.xib; path = src/Options.xib; sourceTree = "<group>"; };
 		B6F2A8C01A96BF6900B305D6 /* Deck.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Deck.cpp; sourceTree = "<group>"; };
 		B6F2A8C11A96BF6900B305D6 /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
 		B6F2A8C41A96BF6900B305D6 /* Game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
@@ -1434,6 +1674,8 @@
 		B6F2A8E21A96C0B600B305D6 /* cardsDB.ruRU.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = cardsDB.ruRU.json; path = resources/cardsDB.ruRU.json; sourceTree = "<group>"; };
 		B6F2A8E31A96C0B600B305D6 /* cardsDB.zhCN.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = cardsDB.zhCN.json; path = resources/cardsDB.zhCN.json; sourceTree = "<group>"; };
 		B6F2A8E41A96C0B600B305D6 /* cardsDB.zhTW.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = cardsDB.zhTW.json; path = resources/cardsDB.zhTW.json; sourceTree = "<group>"; };
+		B6F4691F1ABA9E9B004B1F01 /* Slot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Slot.h; path = src/Slot.h; sourceTree = "<group>"; };
+		B6F469211ABAA2BA004B1F01 /* Slot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Slot.m; path = src/Slot.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1473,6 +1715,8 @@
 				B6F2A8CF1A96BF8900B305D6 /* cjson */,
 				B6F2A8D21A96BF8900B305D6 /* DBCreator.cpp */,
 				B6F2A8D31A96BF8900B305D6 /* DBCreator.h */,
+				B62E0DC51AC52FD400084F35 /* ImageRecognition.h */,
+				B62E0DC41AC52FD400084F35 /* ImageRecognition.cpp */,
 				B68599921AB5642F00B52E07 /* Logger.h */,
 			);
 			name = util;
@@ -1482,6 +1726,125 @@
 		B6E17A921A74F7000014AB6C /* images */ = {
 			isa = PBXGroup;
 			children = (
+				B6A32C6E1ACE75CF00EBE480 /* abberation.png */,
+				B6A32C6F1ACE75CF00EBE480 /* activate-arcanotron.png */,
+				B6A32C701ACE75CF00EBE480 /* activate-electron.png */,
+				B6A32C711ACE75CF00EBE480 /* activate-magmatron.png */,
+				B6A32C721ACE75CF00EBE480 /* activate-toxitron.png */,
+				B6A32C731ACE75CF00EBE480 /* activate.png */,
+				B6A32C741ACE75CF00EBE480 /* arcanotron.png */,
+				B6A32C751ACE75CF00EBE480 /* axe-flinger.png */,
+				B6A32C761ACE75CF00EBE480 /* black-whelp.png */,
+				B6A32C771ACE75CF00EBE480 /* blackwing-corruptor.png */,
+				B6A32C781ACE75CF00EBE480 /* blackwing-technician.png */,
+				B6A32C791ACE75CF00EBE480 /* blackwing.png */,
+				B6A32C7A1ACE75CF00EBE480 /* bone-construct.png */,
+				B6A32C7B1ACE75CF00EBE480 /* brood-afflicition-black.png */,
+				B6A32C7C1ACE75CF00EBE480 /* brood-afflicition-blue.png */,
+				B6A32C7D1ACE75CF00EBE480 /* brood-afflicition-bronze.png */,
+				B6A32C7E1ACE75CF00EBE480 /* brood-afflicition-green.png */,
+				B6A32C7F1ACE75CF00EBE480 /* brood-afflicition-red.png */,
+				B6A32C801ACE75CF00EBE480 /* brood-afflicition.png */,
+				B6A32C811ACE75CF00EBE480 /* burning-adrenaline.png */,
+				B6A32C821ACE75CF00EBE480 /* chromaggus.png */,
+				B6A32C831ACE75CF00EBE480 /* chromatic-dragonkin.png */,
+				B6A32C841ACE75CF00EBE480 /* chromatic-drake.png */,
+				B6A32C851ACE75CF00EBE480 /* chromatic-mutation.png */,
+				B6A32C861ACE75CF00EBE480 /* chromatic-prototype.png */,
+				B6A32C871ACE75CF00EBE480 /* core-rager.png */,
+				B6A32C881ACE75CF00EBE480 /* corrupted-egg.png */,
+				B6A32C891ACE75CF00EBE480 /* dark-iron-bouncer.png */,
+				B6A32C8A1ACE75CF00EBE480 /* dark-iron-skulker.png */,
+				B6A32C8B1ACE75CF00EBE480 /* dark-iron-spectator.png */,
+				B6A32C8C1ACE75CF00EBE480 /* demonwrath.png */,
+				B6A32C8D1ACE75CF00EBE480 /* die-insect.png */,
+				B6A32C8E1ACE75CF00EBE480 /* dismount.png */,
+				B6A32C8F1ACE75CF00EBE480 /* dragon-consort.png */,
+				B6A32C901ACE75CF00EBE480 /* dragon-egg.png */,
+				B6A32C911ACE75CF00EBE480 /* dragon-s-breath.png */,
+				B6A32C921ACE75CF00EBE480 /* dragonkin-sorcerer.png */,
+				B6A32C931ACE75CF00EBE480 /* dragonkin.png */,
+				B6A32C941ACE75CF00EBE480 /* dragonteeth.png */,
+				B6A32C951ACE75CF00EBE480 /* drakkisath-s-command.png */,
+				B6A32C961ACE75CF00EBE480 /* drakonid-crusher.png */,
+				B6A32C971ACE75CF00EBE480 /* druid-of-the-flame_2.png */,
+				B6A32C981ACE75CF00EBE480 /* druid-of-the-flame_3.png */,
+				B6A32C991ACE75CF00EBE480 /* druid-of-the-flame.png */,
+				B6A32C9A1ACE75CF00EBE480 /* echolocate.png */,
+				B6A32C9B1ACE75CF00EBE480 /* electron.png */,
+				B6A32C9C1ACE75CF00EBE480 /* emperor-thaurissan.png */,
+				B6A32C9D1ACE75CF00EBE480 /* essence-of-the-red.png */,
+				B6A32C9E1ACE75CF00EBE480 /* fire-hawk-form.png */,
+				B6A32C9F1ACE75CF00EBE480 /* firecat-form.png */,
+				B6A32CA01ACE75CF00EBE480 /* fireguard-destroyer.png */,
+				B6A32CA11ACE75CF00EBE480 /* firesworn.png */,
+				B6A32CA21ACE75CF00EBE480 /* flameheart.png */,
+				B6A32CA31ACE75CF00EBE480 /* flamewaker-acolyte.png */,
+				B6A32CA41ACE75CF00EBE480 /* flamewaker.png */,
+				B6A32CA51ACE75CF00EBE480 /* frame_neg1.png */,
+				B6A32CA61ACE75CF00EBE480 /* frame_neg2.png */,
+				B6A32CA71ACE75CF00EBE480 /* frame_neg3.png */,
+				B6A32CA81ACE75CF00EBE480 /* frame_neg4.png */,
+				B6A32CA91ACE75D000EBE480 /* frame_neg5.png */,
+				B6A32CAA1ACE75D000EBE480 /* frame_neg7.png */,
+				B6A32CAB1ACE75D000EBE480 /* frame_neg8.png */,
+				B6A32CAC1ACE75D000EBE480 /* frame_neg9.png */,
+				B6A32CAD1ACE75D000EBE480 /* gang-up.png */,
+				B6A32CAE1ACE75D000EBE480 /* get--em.png */,
+				B6A32CAF1ACE75D000EBE480 /* grim-patron.png */,
+				B6A32CB01ACE75D000EBE480 /* guzzler.png */,
+				B6A32CB11ACE75D000EBE480 /* gyth.png */,
+				B6A32CB21ACE75D000EBE480 /* hungry-dragon.png */,
+				B6A32CB31ACE75D000EBE480 /* ignite-mana.png */,
+				B6A32CB41ACE75D000EBE480 /* imp-gang-boss.png */,
+				B6A32CB51ACE75D000EBE480 /* intense-gaze.png */,
+				B6A32CB61ACE75D000EBE480 /* jeering-crowd.png */,
+				B6A32CB71ACE75D000EBE480 /* lava-shock.png */,
+				B6A32CB81ACE75D000EBE480 /* lava.png */,
+				B6A32CB91ACE75D000EBE480 /* living-bomb.png */,
+				B6A32CBA1ACE75D000EBE480 /* living-lava.png */,
+				B6A32CBB1ACE75D000EBE480 /* magma-pulse.png */,
+				B6A32CBC1ACE75D000EBE480 /* magmatron.png */,
+				B6A32CBD1ACE75D000EBE480 /* magmaw.png */,
+				B6A32CBE1ACE75D000EBE480 /* majordomo-executus.png */,
+				B6A32CBF1ACE75D000EBE480 /* me-smash.png */,
+				B6A32CC01ACE75D000EBE480 /* moira-bronzebeard.png */,
+				B6A32CC11ACE75D000EBE480 /* mutation.png */,
+				B6A32CC21ACE75D000EBE480 /* nefarian-strikes.png */,
+				B6A32CC31ACE75D000EBE480 /* nefarian.png */,
+				B6A32CC41ACE75D000EBE480 /* old-horde-orc.png */,
+				B6A32CC51ACE75D000EBE480 /* old-horde.png */,
+				B6A32CC61ACE75D000EBE480 /* onyxiclaw.png */,
+				B6A32CC71ACE75D000EBE480 /* open-the-gates.png */,
+				B6A32CC81ACE75D000EBE480 /* pile-on.png */,
+				B6A32CC91ACE75D000EBE480 /* power-of-the-firelord.png */,
+				B6A32CCA1ACE75D000EBE480 /* quick-shot.png */,
+				B6A32CCB1ACE75D000EBE480 /* razorgore-s-claws.png */,
+				B6A32CCC1ACE75D000EBE480 /* recharge.png */,
+				B6A32CCD1ACE75D000EBE480 /* release-the-aberrations.png */,
+				B6A32CCE1ACE75D000EBE480 /* rend-blackhand.png */,
+				B6A32CCF1ACE75D000EBE480 /* resurrect.png */,
+				B6A32CD01ACE75D000EBE480 /* revenge.png */,
+				B6A32CD11ACE75D000EBE480 /* reverberating-gong.png */,
+				B6A32CD21ACE75D000EBE480 /* rock-out.png */,
+				B6A32CD31ACE75D000EBE480 /* rogues-do-it.png */,
+				B6A32CD41ACE75D000EBE480 /* solemn-vigil.png */,
+				B6A32CD51ACE75D000EBE480 /* son-of-the-flame.png */,
+				B6A32CD61ACE75D000EBE480 /* sonic-breath.png */,
+				B6A32CD71ACE75D000EBE480 /* tail-swipe.png */,
+				B6A32CD81ACE75D000EBE480 /* the-alchemist.png */,
+				B6A32CD91ACE75D000EBE480 /* the-majordomo.png */,
+				B6A32CDA1ACE75D000EBE480 /* the-rookery.png */,
+				B6A32CDB1ACE75D000EBE480 /* the-true-warchief.png */,
+				B6A32CDC1ACE75D000EBE480 /* time-for-smash.png */,
+				B6A32CDD1ACE75D000EBE480 /* toxitron.png */,
+				B6A32CDE1ACE75D000EBE480 /* true-form.png */,
+				B6A32CDF1ACE75D000EBE480 /* twilight-whelp.png */,
+				B6A32CE01ACE75D000EBE480 /* volcanic-drake.png */,
+				B6A32CE11ACE75D000EBE480 /* volcanic-lumberer.png */,
+				B6A32CE21ACE75D000EBE480 /* whelp_2.png */,
+				B6A32CE31ACE75D000EBE480 /* whirling-ash.png */,
+				B6A32CE41ACE75D000EBE480 /* wild-magic.png */,
 				B61E27941A951002000CA1FC /* abomination.png */,
 				B61E27951A951002000CA1FC /* abusive-sergeant.png */,
 				B61E27961A951002000CA1FC /* acidic-swamp-ooze.png */,
@@ -2184,7 +2547,6 @@
 				B6EB5CC41A7476AF00DC03C1 /* Images.xcassets */,
 				B6EB5CC61A7476AF00DC03C1 /* MainMenu.xib */,
 				B6A7E1661AB1679000364147 /* OpponentWindow.xib */,
-				B6F2A8BD1A96A63400B305D6 /* Options.xib */,
 			);
 			path = HSTracker;
 			sourceTree = "<group>";
@@ -2213,6 +2575,8 @@
 				B6A7E1601AB15FC200364147 /* OpponentWindow.m */,
 				B6F2A8BB1A96A63400B305D6 /* Options.h */,
 				B6F2A8BC1A96A63400B305D6 /* Options.m */,
+				B6F4691F1ABA9E9B004B1F01 /* Slot.h */,
+				B6F469211ABAA2BA004B1F01 /* Slot.m */,
 			);
 			name = src;
 			sourceTree = "<group>";
@@ -2309,6 +2673,7 @@
 				B61E2B2A1A951005000CA1FC /* gift-of-mana.png in Resources */,
 				B61E2B901A951005000CA1FC /* lil--exorcist.png in Resources */,
 				B61E2AD31A951005000CA1FC /* druid-of-the-fang.png in Resources */,
+				B6A32D0C1ACE75D000EBE480 /* drakkisath-s-command.png in Resources */,
 				B61E2B0E1A951005000CA1FC /* forked-lightning.png in Resources */,
 				B61E2A601A951005000CA1FC /* avenging-wrath.png in Resources */,
 				B61E2CB01A951005000CA1FC /* vol-jin.png in Resources */,
@@ -2318,6 +2683,7 @@
 				B61E2B1C1A951005000CA1FC /* frost-elemental.png in Resources */,
 				B61E2BB51A951005000CA1FC /* mind-control-crystal.png in Resources */,
 				B61E2AB51A951005000CA1FC /* darkbomb.png in Resources */,
+				B6A32D4E1ACE75D000EBE480 /* tail-swipe.png in Resources */,
 				B61E2CB61A951005000CA1FC /* water-elemental.png in Resources */,
 				B61E2ACF1A951005000CA1FC /* dread-corsair.png in Resources */,
 				B61E2BE01A951005000CA1FC /* novice-engineer.png in Resources */,
@@ -2327,7 +2693,9 @@
 				B61E2C1F1A951005000CA1FC /* screwjank-clunker.png in Resources */,
 				B61E2C4A1A951005000CA1FC /* slime.png in Resources */,
 				B61E2B9E1A951005000CA1FC /* malorne.png in Resources */,
+				B6A32D591ACE75D000EBE480 /* whelp_2.png in Resources */,
 				B61E2B501A951005000CA1FC /* holy-light.png in Resources */,
+				B6A32CEB1ACE75D000EBE480 /* arcanotron.png in Resources */,
 				B61E2AA71A951005000CA1FC /* counterspell.png in Resources */,
 				B61E2C241A951005000CA1FC /* sen-jin-shieldmasta.png in Resources */,
 				B61E2B8F1A951005000CA1FC /* lightwell.png in Resources */,
@@ -2337,6 +2705,7 @@
 				B61E2BAF1A951005000CA1FC /* mekgineer-thermaplugg.png in Resources */,
 				B61E2B051A951005000CA1FC /* flamestrike.png in Resources */,
 				B61E2CC01A951005000CA1FC /* windfury-harpy.png in Resources */,
+				B6A32CFE1ACE75D000EBE480 /* core-rager.png in Resources */,
 				B61E2C481A951005000CA1FC /* skeleton.png in Resources */,
 				B61E2A3D1A951005000CA1FC /* ancestral-spirit.png in Resources */,
 				B61E2AD21A951005000CA1FC /* druid-of-the-claw.png in Resources */,
@@ -2346,6 +2715,7 @@
 				B61E2AE01A951005000CA1FC /* emboldener-3000.png in Resources */,
 				B61E2BAD1A951005000CA1FC /* mechanical-yeti.png in Resources */,
 				B61E2AD61A951005000CA1FC /* dust-devil.png in Resources */,
+				B6A32D1E1ACE75D000EBE480 /* frame_neg3.png in Resources */,
 				B61E2C8A1A951005000CA1FC /* tinker-s-sharpsword-oil.png in Resources */,
 				B61E2ACA1A951005000CA1FC /* doomhammer.png in Resources */,
 				B61E2AE61A951005000CA1FC /* equality.png in Resources */,
@@ -2370,20 +2740,28 @@
 				B61E2C081A951005000CA1FC /* reckless-rocketeer.png in Resources */,
 				B61E2C811A951005000CA1FC /* temple-enforcer.png in Resources */,
 				B61E2BF51A951005000CA1FC /* power-of-the-horde.png in Resources */,
+				B6A32D331ACE75D000EBE480 /* magmatron.png in Resources */,
 				B61E2AA51A951005000CA1FC /* core-hound.png in Resources */,
 				B61E2C4E1A951005000CA1FC /* sneed-s-old-shredder.png in Resources */,
 				B61E2AC81A951005000CA1FC /* divine-spirit.png in Resources */,
+				B6A32D351ACE75D000EBE480 /* majordomo-executus.png in Resources */,
+				B6A32D1B1ACE75D000EBE480 /* flamewaker.png in Resources */,
 				B61E2AB11A951005000CA1FC /* dark-cultist.png in Resources */,
 				B61E2C3D1A951005000CA1FC /* siege-engine.png in Resources */,
 				B61E2B1B1A951005000CA1FC /* frog.png in Resources */,
+				B6A32D271ACE75D000EBE480 /* guzzler.png in Resources */,
 				B61E2A671A951005000CA1FC /* baron-rivendare.png in Resources */,
 				B61E2A4F1A951005000CA1FC /* arcane-nullifier-x-21.png in Resources */,
 				B61E2A561A951005000CA1FC /* argent-squire.png in Resources */,
+				B6A32D4F1ACE75D000EBE480 /* the-alchemist.png in Resources */,
 				B61E2AD41A951005000CA1FC /* dunemaul-shaman.png in Resources */,
 				B61E2B381A951005000CA1FC /* grommash-hellscream.png in Resources */,
 				B61E2B6C1A951005000CA1FC /* ironbark-protector.png in Resources */,
+				B6A32D5A1ACE75D000EBE480 /* whirling-ash.png in Resources */,
+				B6A32D261ACE75D000EBE480 /* grim-patron.png in Resources */,
 				B61E2C521A951005000CA1FC /* sorcerer-s-apprentice.png in Resources */,
 				B61E2BB01A951005000CA1FC /* metaltooth-leaper.png in Resources */,
+				B6A32D551ACE75D000EBE480 /* true-form.png in Resources */,
 				B61E2B431A951005000CA1FC /* headcrack.png in Resources */,
 				B61E2CCB1A951005000CA1FC /* young-priestess.png in Resources */,
 				B61E2C1E1A951005000CA1FC /* scavenging-hyena.png in Resources */,
@@ -2400,6 +2778,7 @@
 				B61E2A581A951005000CA1FC /* armor-up.png in Resources */,
 				B61E2A8B1A951005000CA1FC /* captain-greenskin.png in Resources */,
 				B61E2A3C1A951005000CA1FC /* ancestral-healing.png in Resources */,
+				B6A32D3C1ACE75D000EBE480 /* old-horde.png in Resources */,
 				B61E2AF81A951005000CA1FC /* fen-creeper.png in Resources */,
 				B61E2AC31A951005000CA1FC /* demonfire.png in Resources */,
 				B61E2AF31A951005000CA1FC /* far-sight.png in Resources */,
@@ -2409,11 +2788,14 @@
 				B61E2C611A951005000CA1FC /* spore.png in Resources */,
 				B61E2A7F1A951005000CA1FC /* bolvar-fordragon.png in Resources */,
 				B61E2CA41A951005000CA1FC /* upgraded-repair-bot.png in Resources */,
+				B6A32D231ACE75D000EBE480 /* frame_neg9.png in Resources */,
 				B61E2CA61A951005000CA1FC /* vanish.png in Resources */,
 				B61E2B2D1A951005000CA1FC /* glaivezooka.png in Resources */,
 				B61E2A751A951005000CA1FC /* blood-fury.png in Resources */,
 				B61E2C761A951005000CA1FC /* succubus.png in Resources */,
+				B6A32D011ACE75D000EBE480 /* dark-iron-skulker.png in Resources */,
 				B61E2A391A951005000CA1FC /* alexstrasza.png in Resources */,
+				B6A32D131ACE75D000EBE480 /* emperor-thaurissan.png in Resources */,
 				B6F2A8EE1A96C0B600B305D6 /* cardsDB.ptBR.json in Resources */,
 				B61E2C281A951005000CA1FC /* shadow-madness.png in Resources */,
 				B61E2C371A951005000CA1FC /* shielded-minibot.png in Resources */,
@@ -2421,6 +2803,7 @@
 				B61E2CC81A951005000CA1FC /* wrath-of-air-totem.png in Resources */,
 				B61E2C421A951005000CA1FC /* silverback-patriarch.png in Resources */,
 				B61E2A4D1A951005000CA1FC /* arcane-intellect.png in Resources */,
+				B6A32D091ACE75D000EBE480 /* dragonkin-sorcerer.png in Resources */,
 				B61E2C741A951005000CA1FC /* stormwind-knight.png in Resources */,
 				B61E2C441A951005000CA1FC /* sinister-strike.png in Resources */,
 				B61E2C0C1A951005000CA1FC /* reincarnate.png in Resources */,
@@ -2428,16 +2811,21 @@
 				B61E2AF11A951005000CA1FC /* fallout-slime.png in Resources */,
 				B61E2BD41A951005000CA1FC /* naturalize.png in Resources */,
 				B61E2A641A951005000CA1FC /* bananas.png in Resources */,
+				B6A32CF51ACE75D000EBE480 /* brood-afflicition-green.png in Resources */,
 				B61E2A3A1A951005000CA1FC /* amani-berserker.png in Resources */,
 				B61E2C181A951005000CA1FC /* sap.png in Resources */,
 				B61E2AED1A951005000CA1FC /* explosive-trap.png in Resources */,
 				B61E2C8C1A951005000CA1FC /* tinkmaster-overspark.png in Resources */,
+				B6A32D531ACE75D000EBE480 /* time-for-smash.png in Resources */,
 				B61E2B081A951005000CA1FC /* flesheating-ghoul.png in Resources */,
+				B6A32CEC1ACE75D000EBE480 /* axe-flinger.png in Resources */,
 				B61E2AEE1A951005000CA1FC /* eye-for-an-eye.png in Resources */,
 				B61E2AF91A951005000CA1FC /* feral-spirit.png in Resources */,
 				B61E2AC71A951005000CA1FC /* divine-favor.png in Resources */,
 				B61E2B5C1A951005000CA1FC /* i-am-murloc.png in Resources */,
+				B6A32D241ACE75D000EBE480 /* gang-up.png in Resources */,
 				B61E2B981A951005000CA1FC /* mad-bomber.png in Resources */,
+				B6A32D2D1ACE75D000EBE480 /* jeering-crowd.png in Resources */,
 				B61E2B5A1A951005000CA1FC /* hunter-s-mark.png in Resources */,
 				B61E2B961A951005000CA1FC /* lorewalker-cho.png in Resources */,
 				B61E2CC61A951005000CA1FC /* worshipper.png in Resources */,
@@ -2450,6 +2838,7 @@
 				B61E2BAE1A951005000CA1FC /* mechwarper.png in Resources */,
 				B61E2AE71A951005000CA1FC /* ethereal-arcanist.png in Resources */,
 				B61E2B191A951005000CA1FC /* frame.png in Resources */,
+				B6A32CED1ACE75D000EBE480 /* black-whelp.png in Resources */,
 				B61E2B441A951005000CA1FC /* healing-totem.png in Resources */,
 				B61E2B241A951005000CA1FC /* gadgetzan-auctioneer.png in Resources */,
 				B61E2AF41A951005000CA1FC /* feign-death.png in Resources */,
@@ -2458,6 +2847,7 @@
 				B61E2C211A951005000CA1FC /* seal-of-light.png in Resources */,
 				B61E2CC31A951005000CA1FC /* wisp.png in Resources */,
 				B61E2BFD1A951005000CA1FC /* puddlestomper.png in Resources */,
+				B6A32CE71ACE75D000EBE480 /* activate-electron.png in Resources */,
 				B61E2C7B1A951005000CA1FC /* swipe.png in Resources */,
 				B61E2B461A951005000CA1FC /* HearthstoneDeckTracker.ico in Resources */,
 				B61E2C051A951005000CA1FC /* rampage.png in Resources */,
@@ -2470,20 +2860,27 @@
 				B61E2AE41A951005000CA1FC /* enhance-o-mechano.png in Resources */,
 				B61E2C691A951005000CA1FC /* starfire.png in Resources */,
 				B61E2A761A951005000CA1FC /* blood-imp.png in Resources */,
+				B6A32D3E1ACE75D000EBE480 /* open-the-gates.png in Resources */,
+				B6A32D151ACE75D000EBE480 /* fire-hawk-form.png in Resources */,
 				B61E2BFC1A951005000CA1FC /* prophet-velen.png in Resources */,
 				B61E2B711A951005000CA1FC /* jeeves.png in Resources */,
+				B6A32CE51ACE75D000EBE480 /* abberation.png in Resources */,
 				B61E2A571A951005000CA1FC /* armor-plating.png in Resources */,
 				B6D35ECE1A95D85200651819 /* frameBlack.png in Resources */,
 				B61E2AE91A951005000CA1FC /* excess-mana.png in Resources */,
 				B61E2B3D1A951005000CA1FC /* gurubashi-berserker.png in Resources */,
+				B6A32D501ACE75D000EBE480 /* the-majordomo.png in Resources */,
+				B6A32CF11ACE75D000EBE480 /* bone-construct.png in Resources */,
 				B61E2CCC1A951005000CA1FC /* youthful-brewmaster.png in Resources */,
 				B61E2BEF1A951005000CA1FC /* pint-sized-summoner.png in Resources */,
 				B6F2A8E81A96C0B600B305D6 /* cardsDB.esES.json in Resources */,
 				B61E2A8F1A951005000CA1FC /* cardBackL.png in Resources */,
 				B61E2B771A951005000CA1FC /* kidnapper.png in Resources */,
+				B6A32D361ACE75D000EBE480 /* me-smash.png in Resources */,
 				B61E2B301A951005000CA1FC /* gnomish-experimenter.png in Resources */,
 				B61E2A6B1A951005000CA1FC /* betrayal.png in Resources */,
 				B61E2BF11A951005000CA1FC /* plague.png in Resources */,
+				B6A32D141ACE75D000EBE480 /* essence-of-the-red.png in Resources */,
 				B61E2AE51A951005000CA1FC /* enrage.png in Resources */,
 				B61E2BCD1A951005000CA1FC /* murloc-tidecaller.png in Resources */,
 				B61E2A9C1A951005000CA1FC /* cogmaster-s-wrench.png in Resources */,
@@ -2496,9 +2893,14 @@
 				B61E2AD71A951005000CA1FC /* eaglehorn-bow.png in Resources */,
 				B61E2B9C1A951005000CA1FC /* magma-rager.png in Resources */,
 				B61E2B791A951005000CA1FC /* king-krush.png in Resources */,
+				B6A32D511ACE75D000EBE480 /* the-rookery.png in Resources */,
 				B61E2B671A951005000CA1FC /* inner-fire.png in Resources */,
+				B6A32D031ACE75D000EBE480 /* demonwrath.png in Resources */,
+				B6A32D481ACE75D000EBE480 /* reverberating-gong.png in Resources */,
+				B6A32D001ACE75D000EBE480 /* dark-iron-bouncer.png in Resources */,
 				B61E2B811A951005000CA1FC /* laughing-sister.png in Resources */,
 				B61E2B061A951005000CA1FC /* flametongue-totem.png in Resources */,
+				B6A32D201ACE75D000EBE480 /* frame_neg5.png in Resources */,
 				B61E2C771A951005000CA1FC /* summoning-portal.png in Resources */,
 				B61E2A401A951005000CA1FC /* ancient-of-lore.png in Resources */,
 				B61E2C991A951005000CA1FC /* twisting-nether.png in Resources */,
@@ -2516,6 +2918,7 @@
 				B61E2CBE1A951005000CA1FC /* wild-growth.png in Resources */,
 				B61E2A781A951005000CA1FC /* bloodfen-raptor.png in Resources */,
 				B61E2B831A951005000CA1FC /* lay-on-hands.png in Resources */,
+				B6A32D061ACE75D000EBE480 /* dragon-consort.png in Resources */,
 				B6F2A8E71A96C0B600B305D6 /* cardsDB.enUS.json in Resources */,
 				B61E2C7A1A951005000CA1FC /* supercharge.png in Resources */,
 				B61E2C7D1A951005000CA1FC /* sylvanas-windrunner.png in Resources */,
@@ -2537,10 +2940,13 @@
 				B61E2C841A951005000CA1FC /* the-black-knight.png in Resources */,
 				B61E2B951A951005000CA1FC /* lord-of-the-arena.png in Resources */,
 				B61E2C2A1A951005000CA1FC /* shadow-word-death.png in Resources */,
+				B6A32D401ACE75D000EBE480 /* power-of-the-firelord.png in Resources */,
 				B61E2C0F1A951005000CA1FC /* repentance.png in Resources */,
 				B61E2AE21A951005000CA1FC /* emergency-coolant.png in Resources */,
 				B61E2C711A951005000CA1FC /* stormforged-axe.png in Resources */,
+				B6A32D321ACE75D000EBE480 /* magma-pulse.png in Resources */,
 				B61E2BC41A951005000CA1FC /* molten-giant.png in Resources */,
+				B6A32D441ACE75D000EBE480 /* release-the-aberrations.png in Resources */,
 				B61E2C961A951005000CA1FC /* truesilver-champion.png in Resources */,
 				B61E2B571A951005000CA1FC /* houndmaster.png in Resources */,
 				B61E2C411A951005000CA1FC /* silver-hand-recruit.png in Resources */,
@@ -2551,6 +2957,7 @@
 				B61E2A411A951005000CA1FC /* ancient-of-war.png in Resources */,
 				B61E2CBD1A951005000CA1FC /* wicked-knife.png in Resources */,
 				B61E2C2F1A951005000CA1FC /* shadowform.png in Resources */,
+				B6A32D2A1ACE75D000EBE480 /* ignite-mana.png in Resources */,
 				B61E2BF01A951005000CA1FC /* pit-lord.png in Resources */,
 				B61E2BC81A951005000CA1FC /* mountain-giant.png in Resources */,
 				B61E2B611A951005000CA1FC /* illuminator.png in Resources */,
@@ -2563,6 +2970,7 @@
 				B61E2ADF1A951005000CA1FC /* elven-archer.png in Resources */,
 				B61E2AB91A951005000CA1FC /* death-s-bite.png in Resources */,
 				B61E2B761A951005000CA1FC /* kezan-mystic.png in Resources */,
+				B6A32CEA1ACE75D000EBE480 /* activate.png in Resources */,
 				B6F2A8EF1A96C0B600B305D6 /* cardsDB.ptPT.json in Resources */,
 				B61E2B631A951005000CA1FC /* imp-master.png in Resources */,
 				B61E2CB21A951005000CA1FC /* wailing-soul.png in Resources */,
@@ -2570,19 +2978,29 @@
 				B61E2C9C1A951005000CA1FC /* undertaker.png in Resources */,
 				B61E2B371A951005000CA1FC /* grimscale-oracle.png in Resources */,
 				B61E2A701A951005000CA1FC /* blessing-of-kings.png in Resources */,
+				B6A32CF81ACE75D000EBE480 /* burning-adrenaline.png in Resources */,
+				B6A32D171ACE75D000EBE480 /* fireguard-destroyer.png in Resources */,
+				B6A32CEF1ACE75D000EBE480 /* blackwing-technician.png in Resources */,
 				B61E2B151A951005000CA1FC /* frame_8.png in Resources */,
+				B6A32D081ACE75D000EBE480 /* dragon-s-breath.png in Resources */,
 				B6EB5CC51A7476AF00DC03C1 /* Images.xcassets in Resources */,
 				B61E2BD11A951005000CA1FC /* muster-for-battle.png in Resources */,
 				B61E2C851A951005000CA1FC /* the-coin.png in Resources */,
+				B6A32D0B1ACE75D000EBE480 /* dragonteeth.png in Resources */,
 				B61E2CA81A951005000CA1FC /* velen-s-chosen.png in Resources */,
 				B61E2C801A951005000CA1FC /* tauren-warrior.png in Resources */,
 				B61E2C001A951005000CA1FC /* quartermaster.png in Resources */,
+				B6A32CFA1ACE75D000EBE480 /* chromatic-dragonkin.png in Resources */,
 				B61E2C111A951005000CA1FC /* river-crocolisk.png in Resources */,
+				B6A32D391ACE75D000EBE480 /* nefarian-strikes.png in Resources */,
 				B61E2B521A951005000CA1FC /* holy-smite.png in Resources */,
+				B6A32D251ACE75D000EBE480 /* get--em.png in Resources */,
 				B61E2BE41A951005000CA1FC /* ogre-magi.png in Resources */,
 				B61E2CC21A951005000CA1FC /* windspeaker.png in Resources */,
+				B6A32D4C1ACE75D000EBE480 /* son-of-the-flame.png in Resources */,
 				B61E2C781A951005000CA1FC /* sunfury-protector.png in Resources */,
 				B61E2C0B1A951005000CA1FC /* redemption.png in Resources */,
+				B6A32D2B1ACE75D000EBE480 /* imp-gang-boss.png in Resources */,
 				B61E2A361A951005000CA1FC /* al-akir-the-windlord.png in Resources */,
 				B61E2A9B1A951005000CA1FC /* coghammer.png in Resources */,
 				B61E2C311A951005000CA1FC /* shapeshift.png in Resources */,
@@ -2592,13 +3010,17 @@
 				B61E2B691A951005000CA1FC /* innervate.png in Resources */,
 				B61E2C601A951005000CA1FC /* spiteful-smith.png in Resources */,
 				B61E2BA71A951005000CA1FC /* mass-dispel.png in Resources */,
+				B6A32D2F1ACE75D000EBE480 /* lava.png in Resources */,
+				B6A32D5B1ACE75D000EBE480 /* wild-magic.png in Resources */,
 				B61E2C8E1A951005000CA1FC /* toshley.png in Resources */,
 				B61E2C631A951005000CA1FC /* sprint.png in Resources */,
+				B6A32D2E1ACE75D000EBE480 /* lava-shock.png in Resources */,
 				B61E2C871A951005000CA1FC /* thrallmar-farseer.png in Resources */,
 				B61E2C381A951005000CA1FC /* shieldmaiden.png in Resources */,
 				B61E2BD61A951005000CA1FC /* necrotic-poison.png in Resources */,
 				B61E2AB21A951005000CA1FC /* dark-iron-dwarf.png in Resources */,
 				B61E2C071A951005000CA1FC /* razorfen-hunter.png in Resources */,
+				B6A32D311ACE75D000EBE480 /* living-lava.png in Resources */,
 				B61E2B9F1A951005000CA1FC /* malygos.png in Resources */,
 				B61E2C8B1A951005000CA1FC /* tinkertown-technician.png in Resources */,
 				B6F2A8E51A96C0B600B305D6 /* cardsDB.deDE.json in Resources */,
@@ -2609,6 +3031,7 @@
 				B61E2B311A951005000CA1FC /* gnomish-inventor.png in Resources */,
 				B61E2B1D1A951005000CA1FC /* frost-nova.png in Resources */,
 				B61E2CCA1A951005000CA1FC /* young-dragonhawk.png in Resources */,
+				B6A32D4B1ACE75D000EBE480 /* solemn-vigil.png in Resources */,
 				B61E2A731A951005000CA1FC /* blingtron-3000.png in Resources */,
 				B61E2AD81A951005000CA1FC /* earth-elemental.png in Resources */,
 				B61E2ADC1A951005000CA1FC /* echoing-ooze.png in Resources */,
@@ -2625,6 +3048,7 @@
 				B61E2C261A951005000CA1FC /* shade-of-naxxramas.png in Resources */,
 				B61E2C4F1A951005000CA1FC /* snipe.png in Resources */,
 				B61E2A5F1A951005000CA1FC /* avenge.png in Resources */,
+				B6A32D3F1ACE75D000EBE480 /* pile-on.png in Resources */,
 				B61E2BEC1A951005000CA1FC /* perdition-s-blade.png in Resources */,
 				B61E2C6C1A951005000CA1FC /* steamwheedle-sniper.png in Resources */,
 				B61E2BB41A951005000CA1FC /* mind-blast.png in Resources */,
@@ -2635,10 +3059,15 @@
 				B61E2C191A951005000CA1FC /* savage-roar.png in Resources */,
 				B61E2AF61A951005000CA1FC /* fel-reaver.png in Resources */,
 				B61E2B071A951005000CA1FC /* flare.png in Resources */,
+				B6A32D0A1ACE75D000EBE480 /* dragonkin.png in Resources */,
+				B6A32CF21ACE75D000EBE480 /* brood-afflicition-black.png in Resources */,
 				B61E2A831A951005000CA1FC /* boulderfist-ogre.png in Resources */,
 				B61E2A3B1A951005000CA1FC /* ancestor-s-call.png in Resources */,
 				B61E2C161A951005000CA1FC /* sacrificial-pact.png in Resources */,
 				B61E2B261A951005000CA1FC /* gallywix-s-coin.png in Resources */,
+				B6A32CF01ACE75D000EBE480 /* blackwing.png in Resources */,
+				B6A32D461ACE75D000EBE480 /* resurrect.png in Resources */,
+				B6A32CFB1ACE75D000EBE480 /* chromatic-drake.png in Resources */,
 				B61E2BB21A951005000CA1FC /* millhouse-manastorm.png in Resources */,
 				B61E2C561A951005000CA1FC /* southsea-deckhand.png in Resources */,
 				B62321C21A9AF873006D0AB1 /* frameHighlight.png in Resources */,
@@ -2654,15 +3083,20 @@
 				B61E2C971A951005000CA1FC /* tundra-rhino.png in Resources */,
 				B61E2B001A951005000CA1FC /* fireblast.png in Resources */,
 				B61E2BA81A951005000CA1FC /* massive-runeblade.png in Resources */,
+				B6A32D3D1ACE75D000EBE480 /* onyxiclaw.png in Resources */,
+				B6A32D2C1ACE75D000EBE480 /* intense-gaze.png in Resources */,
 				B61E2A6C1A951005000CA1FC /* big-game-hunter.png in Resources */,
+				B6A32CF91ACE75D000EBE480 /* chromaggus.png in Resources */,
 				B61E2C901A951005000CA1FC /* totemic-might.png in Resources */,
 				B61E2BFB1A951005000CA1FC /* priestess-of-elune.png in Resources */,
 				B6EB5CC81A7476AF00DC03C1 /* MainMenu.xib in Resources */,
 				B61E2B0A1A951005000CA1FC /* flying-machine.png in Resources */,
 				B61E2C9D1A951005000CA1FC /* unleash-the-hounds.png in Resources */,
+				B6A32D451ACE75D000EBE480 /* rend-blackhand.png in Resources */,
 				B61E2C791A951005000CA1FC /* sunwalker.png in Resources */,
 				B61E2BF91A951005000CA1FC /* powermace.png in Resources */,
 				B61E2AFB1A951005000CA1FC /* fiery-war-axe.png in Resources */,
+				B6A32D341ACE75D000EBE480 /* magmaw.png in Resources */,
 				B61E2B491A951005000CA1FC /* hellfire.png in Resources */,
 				B61E2ADB1A951005000CA1FC /* echo-of-medivh.png in Resources */,
 				B61E2BD81A951005000CA1FC /* nerub-ar-weblord.png in Resources */,
@@ -2672,8 +3106,11 @@
 				B61E2BD21A951005000CA1FC /* mutating-injection.png in Resources */,
 				B61E2C5B1A951005000CA1FC /* spectral-warrior.png in Resources */,
 				B61E2AA91A951005000CA1FC /* crazed-alchemist.png in Resources */,
+				B6A32D4A1ACE75D000EBE480 /* rogues-do-it.png in Resources */,
 				B61E2C351A951005000CA1FC /* shield-slam.png in Resources */,
+				B6A32D581ACE75D000EBE480 /* volcanic-lumberer.png in Resources */,
 				B61E2C931A951005000CA1FC /* treant.png in Resources */,
+				B6A32D021ACE75D000EBE480 /* dark-iron-spectator.png in Resources */,
 				B61E2AD51A951005000CA1FC /* duplicate.png in Resources */,
 				B61E2AF51A951005000CA1FC /* fel-cannon.png in Resources */,
 				B61E2C331A951005000CA1FC /* sheep.png in Resources */,
@@ -2681,6 +3118,7 @@
 				B61E2C591A951005000CA1FC /* spectral-spider.png in Resources */,
 				B61E2C0A1A951005000CA1FC /* recycle.png in Resources */,
 				B61E2CC71A951005000CA1FC /* worthless-imp.png in Resources */,
+				B6A32D0F1ACE75D000EBE480 /* druid-of-the-flame_3.png in Resources */,
 				B61E2CC11A951005000CA1FC /* windfury.png in Resources */,
 				B61E2A941A951005000CA1FC /* circle-of-healing.png in Resources */,
 				B61E2A921A951005000CA1FC /* chicken.png in Resources */,
@@ -2702,12 +3140,14 @@
 				B61E2A931A951005000CA1FC /* chillwind-yeti.png in Resources */,
 				B61E2C3A1A951005000CA1FC /* shiv.png in Resources */,
 				B61E2B3E1A951005000CA1FC /* hammer-of-wrath.png in Resources */,
+				B6A32D051ACE75D000EBE480 /* dismount.png in Resources */,
 				B61E2A971A951005000CA1FC /* clockwork-giant.png in Resources */,
 				B6F2A8EB1A96C0B600B305D6 /* cardsDB.itIT.json in Resources */,
 				B61E2CCF1A951005000CA1FC /* zombie-chow.png in Resources */,
 				B61E2C7F1A951005000CA1FC /* target-dummy.png in Resources */,
 				B61E2AF01A951005000CA1FC /* faerie-dragon.png in Resources */,
 				B61E2A851A951005000CA1FC /* brawl.png in Resources */,
+				B6A32CE81ACE75D000EBE480 /* activate-magmatron.png in Resources */,
 				B61E2BA41A951005000CA1FC /* mark-of-nature.png in Resources */,
 				B61E2A881A951005000CA1FC /* cabal-shadow-priest.png in Resources */,
 				B61E2BD01A951005000CA1FC /* murloc.png in Resources */,
@@ -2719,11 +3159,14 @@
 				B61E2C321A951005000CA1FC /* shattered-sun-cleric.png in Resources */,
 				B61E2BAC1A951005000CA1FC /* mechanical-dragonling.png in Resources */,
 				B61E2B911A951005000CA1FC /* loatheb.png in Resources */,
+				B6A32D221ACE75D000EBE480 /* frame_neg8.png in Resources */,
 				B61E2AC21A951005000CA1FC /* demolisher.png in Resources */,
 				B61E2BB11A951005000CA1FC /* micro-machine.png in Resources */,
 				B61E2B171A951005000CA1FC /* frame_countbox.png in Resources */,
 				B61E2A441A951005000CA1FC /* anima-golem.png in Resources */,
+				B6A32D041ACE75D000EBE480 /* die-insect.png in Resources */,
 				B61E2A4C1A951005000CA1FC /* arcane-golem.png in Resources */,
+				B6A32D111ACE75D000EBE480 /* echolocate.png in Resources */,
 				B61E2B6A1A951005000CA1FC /* iron-juggernaut.png in Resources */,
 				B61E2AFD1A951005000CA1FC /* finkle-einhorn.png in Resources */,
 				B61E2AA31A951005000CA1FC /* cone-of-cold.png in Resources */,
@@ -2737,6 +3180,7 @@
 				B61E2B921A951005000CA1FC /* locust-swarm.png in Resources */,
 				B61E2B0B1A951005000CA1FC /* foe-reaper-4000.png in Resources */,
 				B61E2A7B1A951005000CA1FC /* bloodsail-corsair.png in Resources */,
+				B6A32D571ACE75D000EBE480 /* volcanic-drake.png in Resources */,
 				B61E2BFA1A951005000CA1FC /* preparation.png in Resources */,
 				B6F2A8F11A96C0B600B305D6 /* cardsDB.zhCN.json in Resources */,
 				B61E2CBB1A951005000CA1FC /* whirling-zap-o-matic.png in Resources */,
@@ -2745,6 +3189,8 @@
 				B61E2AEA1A951005000CA1FC /* execute.png in Resources */,
 				B61E2C671A951005000CA1FC /* stampeding-kodo.png in Resources */,
 				B61E2B681A951005000CA1FC /* inner-rage.png in Resources */,
+				B6A32D1D1ACE75D000EBE480 /* frame_neg2.png in Resources */,
+				B6A32D3B1ACE75D000EBE480 /* old-horde-orc.png in Resources */,
 				B61E2B271A951005000CA1FC /* gazlowe.png in Resources */,
 				B61E2B5F1A951005000CA1FC /* ice-lance.png in Resources */,
 				B61E2B471A951005000CA1FC /* HearthstoneDeckTracker16.ico in Resources */,
@@ -2766,12 +3212,16 @@
 				B61E2C141A951005000CA1FC /* rusty-horn.png in Resources */,
 				B61E2C6D1A951005000CA1FC /* stoneclaw-totem.png in Resources */,
 				B61E2BE51A951005000CA1FC /* ogre-ninja.png in Resources */,
+				B6A32CFC1ACE75D000EBE480 /* chromatic-mutation.png in Resources */,
 				B61E2CB81A951005000CA1FC /* wee-spellstopper.png in Resources */,
+				B6A32D0E1ACE75D000EBE480 /* druid-of-the-flame_2.png in Resources */,
+				B6A32D541ACE75D000EBE480 /* toxitron.png in Resources */,
 				B61E2B821A951005000CA1FC /* lava-burst.png in Resources */,
 				B61E2BD31A951005000CA1FC /* nat-pagle.png in Resources */,
 				B61E2B9D1A951005000CA1FC /* mal-ganis.png in Resources */,
 				B61E2AA61A951005000CA1FC /* corruption.png in Resources */,
 				B61E2A791A951005000CA1FC /* bloodlust.png in Resources */,
+				B6A32D161ACE75D000EBE480 /* firecat-form.png in Resources */,
 				B61E2CB11A951005000CA1FC /* voodoo-doctor.png in Resources */,
 				B61E2AB31A951005000CA1FC /* dark-wispers.png in Resources */,
 				B61E2A691A951005000CA1FC /* battle-rage.png in Resources */,
@@ -2780,6 +3230,7 @@
 				B61E2B851A951005000CA1FC /* leper-gnome.png in Resources */,
 				B61E2B781A951005000CA1FC /* kill-command.png in Resources */,
 				B61E2AC41A951005000CA1FC /* demonheart.png in Resources */,
+				B6A32D191ACE75D000EBE480 /* flameheart.png in Resources */,
 				B61E2A7C1A951005000CA1FC /* bloodsail-raider.png in Resources */,
 				B61E2CA51A951005000CA1FC /* v-07-tr-0n.png in Resources */,
 				B61E2C131A951005000CA1FC /* runeblade.png in Resources */,
@@ -2796,6 +3247,7 @@
 				B61E2C121A951005000CA1FC /* rockbiter-weapon.png in Resources */,
 				B61E2C3F1A951005000CA1FC /* siltfin-spiritwalker.png in Resources */,
 				B61E2C6E1A951005000CA1FC /* stoneskin-gargoyle.png in Resources */,
+				B6A32CFD1ACE75D000EBE480 /* chromatic-prototype.png in Resources */,
 				B61E2C5D1A951005000CA1FC /* spellbreaker.png in Resources */,
 				B6F2A8EC1A96C0B600B305D6 /* cardsDB.koKR.json in Resources */,
 				B61E2AAC1A951005000CA1FC /* cult-master.png in Resources */,
@@ -2817,19 +3269,22 @@
 				B61E2AB71A951005000CA1FC /* deadly-poison.png in Resources */,
 				B61E2A9A1A951005000CA1FC /* cobra-shot.png in Resources */,
 				B61E2B3C1A951005000CA1FC /* guardian-of-kings.png in Resources */,
-				B6F2A8BF1A96A63400B305D6 /* Options.xib in Resources */,
 				B61E2A9D1A951005000CA1FC /* cogmaster.png in Resources */,
 				B61E2B341A951005000CA1FC /* goblin-sapper.png in Resources */,
 				B61E2C8D1A951005000CA1FC /* tirion-fordring.png in Resources */,
 				B61E2A6A1A951005000CA1FC /* bestial-wrath.png in Resources */,
 				B61E2C1D1A951005000CA1FC /* scarlet-purifier.png in Resources */,
 				B61E2C401A951005000CA1FC /* silver-hand-knight.png in Resources */,
+				B6A32D291ACE75D000EBE480 /* hungry-dragon.png in Resources */,
+				B6A32CF41ACE75D000EBE480 /* brood-afflicition-bronze.png in Resources */,
 				B61E2CB71A951005000CA1FC /* webspinner.png in Resources */,
 				B61E2C511A951005000CA1FC /* soot-spewer.png in Resources */,
+				B6A32D211ACE75D000EBE480 /* frame_neg7.png in Resources */,
 				B61E2BE61A951005000CA1FC /* ogre-warmaul.png in Resources */,
 				B61E2BD71A951005000CA1FC /* neptulon.png in Resources */,
 				B61E2B181A951005000CA1FC /* frame_legendary.png in Resources */,
 				B61E2B211A951005000CA1FC /* frostwolf-warlord.png in Resources */,
+				B6A32D421ACE75D000EBE480 /* razorgore-s-claws.png in Resources */,
 				B61E2CA21A951005000CA1FC /* unstable-portal.png in Resources */,
 				B61E2A5E1A951005000CA1FC /* auchenai-soulpriest.png in Resources */,
 				B61E2B881A951005000CA1FC /* light-of-the-naaru.png in Resources */,
@@ -2842,6 +3297,8 @@
 				B61E2C5A1A951005000CA1FC /* spectral-trainee.png in Resources */,
 				B61E2AE11A951005000CA1FC /* emerald-drake.png in Resources */,
 				B61E2ABA1A951005000CA1FC /* deathbloom.png in Resources */,
+				B6A32D281ACE75D000EBE480 /* gyth.png in Resources */,
+				B6A32CE61ACE75D000EBE480 /* activate-arcanotron.png in Resources */,
 				B61E2B931A951005000CA1FC /* loot-hoarder.png in Resources */,
 				B61E2CBA1A951005000CA1FC /* whirling-blades.png in Resources */,
 				B61E2B111A951005000CA1FC /* frame_4.png in Resources */,
@@ -2866,12 +3323,17 @@
 				B61E2BA21A951005000CA1FC /* mana-wraith.png in Resources */,
 				B61E2BDE1A951005000CA1FC /* northshire-cleric.png in Resources */,
 				B61E2A5B1A951005000CA1FC /* assassin-s-blade.png in Resources */,
+				B6A32D1A1ACE75D000EBE480 /* flamewaker-acolyte.png in Resources */,
+				B6A32D0D1ACE75D000EBE480 /* drakonid-crusher.png in Resources */,
+				B6A32D1C1ACE75D000EBE480 /* frame_neg1.png in Resources */,
 				B61E2C5E1A951005000CA1FC /* spider-tank.png in Resources */,
 				B61E2B3A1A951005000CA1FC /* gruul.png in Resources */,
 				B61E2C571A951005000CA1FC /* spectral-knight.png in Resources */,
 				B61E2C201A951005000CA1FC /* sea-giant.png in Resources */,
 				B61E2A451A951005000CA1FC /* animal-companion.png in Resources */,
 				B61E2A541A951005000CA1FC /* argent-commander.png in Resources */,
+				B6A32D381ACE75D000EBE480 /* mutation.png in Resources */,
+				B6A32CFF1ACE75D000EBE480 /* corrupted-egg.png in Resources */,
 				B61E2A3F1A951005000CA1FC /* ancient-mage.png in Resources */,
 				B61E2A591A951005000CA1FC /* armorsmith.png in Resources */,
 				B6F2A8F01A96C0B600B305D6 /* cardsDB.ruRU.json in Resources */,
@@ -2880,6 +3342,7 @@
 				B61E2CBC1A951005000CA1FC /* whirlwind.png in Resources */,
 				B61E2B1A1A951005000CA1FC /* freezing-trap.png in Resources */,
 				B61E2C3E1A951005000CA1FC /* silence.png in Resources */,
+				B6A32D471ACE75D000EBE480 /* revenge.png in Resources */,
 				B61E2A531A951005000CA1FC /* archmage.png in Resources */,
 				B61E2BF31A951005000CA1FC /* polymorph.png in Resources */,
 				B61E2BCE1A951005000CA1FC /* murloc-tidehunter.png in Resources */,
@@ -2913,12 +3376,15 @@
 				B61E2CA31A951005000CA1FC /* upgrade.png in Resources */,
 				B61E2CC41A951005000CA1FC /* wolfrider.png in Resources */,
 				B61E2C3B1A951005000CA1FC /* shrinkmeister.png in Resources */,
+				B6A32D121ACE75D000EBE480 /* electron.png in Resources */,
 				B61E2C681A951005000CA1FC /* starfall.png in Resources */,
+				B6A32CF31ACE75D000EBE480 /* brood-afflicition-blue.png in Resources */,
 				B61E2BD91A951005000CA1FC /* nerubian-egg.png in Resources */,
 				B61E2B041A951005000CA1FC /* flamecannon.png in Resources */,
 				B61E2C861A951005000CA1FC /* thoughtsteal.png in Resources */,
 				B61E2ACE1A951005000CA1FC /* drain-life.png in Resources */,
 				B61E2BCA1A951005000CA1FC /* multi-shot.png in Resources */,
+				B6A32D1F1ACE75D000EBE480 /* frame_neg4.png in Resources */,
 				B61E2BC11A951005000CA1FC /* mistress-of-pain.png in Resources */,
 				B61E2BE71A951005000CA1FC /* old-murk-eye.png in Resources */,
 				B61E2CAC1A951005000CA1FC /* vitality-totem.png in Resources */,
@@ -2930,16 +3396,20 @@
 				B61E2B5B1A951005000CA1FC /* hyena.png in Resources */,
 				B61E2C0E1A951005000CA1FC /* repair-bot.png in Resources */,
 				B61E2B7C1A951005000CA1FC /* kirin-tor-mage.png in Resources */,
+				B6A32CEE1ACE75D000EBE480 /* blackwing-corruptor.png in Resources */,
 				B61E2A521A951005000CA1FC /* archmage-antonidas.png in Resources */,
 				B61E2A961A951005000CA1FC /* cleave.png in Resources */,
 				B61E2B991A951005000CA1FC /* mad-scientist.png in Resources */,
 				B61E2B121A951005000CA1FC /* frame_5.png in Resources */,
 				B61E2C041A951005000CA1FC /* raid-leader.png in Resources */,
+				B6A32D561ACE75D000EBE480 /* twilight-whelp.png in Resources */,
 				B61E2B561A951005000CA1FC /* hound.png in Resources */,
 				B61E2ABF1A951005000CA1FC /* defender.png in Resources */,
+				B6A32CF61ACE75D000EBE480 /* brood-afflicition-red.png in Resources */,
 				B61E2AEF1A951005000CA1FC /* faceless-manipulator.png in Resources */,
 				B61E2B7A1A951005000CA1FC /* king-mukla.png in Resources */,
 				B61E2C2C1A951005000CA1FC /* shadowbomber.png in Resources */,
+				B6A32D431ACE75D000EBE480 /* recharge.png in Resources */,
 				B61E2C1C1A951005000CA1FC /* scarlet-crusader.png in Resources */,
 				B61E2BBB1A951005000CA1FC /* mindgames.png in Resources */,
 				B61E2A491A951005000CA1FC /* anub-ar-ambusher.png in Resources */,
@@ -2948,9 +3418,11 @@
 				B61E2C9A1A951005000CA1FC /* unbound-elemental.png in Resources */,
 				B61E2A771A951005000CA1FC /* blood-knight.png in Resources */,
 				B61E2C721A951005000CA1FC /* stormpike-commando.png in Resources */,
+				B6A32D181ACE75D000EBE480 /* firesworn.png in Resources */,
 				B61E2C361A951005000CA1FC /* shieldbearer.png in Resources */,
 				B61E2A471A951005000CA1FC /* anodized-robo-cub.png in Resources */,
 				B61E2B941A951005000CA1FC /* lord-jaraxxus.png in Resources */,
+				B6A32D101ACE75D000EBE480 /* druid-of-the-flame.png in Resources */,
 				B61E2A321A951005000CA1FC /* abomination.png in Resources */,
 				B61E2AFA1A951005000CA1FC /* feugen.png in Resources */,
 				B61E2B101A951005000CA1FC /* frame_3.png in Resources */,
@@ -2960,6 +3432,7 @@
 				B61E2A6D1A951005000CA1FC /* bite.png in Resources */,
 				B61E2C031A951005000CA1FC /* ragnaros-the-firelord.png in Resources */,
 				B61E2C231A951005000CA1FC /* secretkeeper.png in Resources */,
+				B6A32D521ACE75D000EBE480 /* the-true-warchief.png in Resources */,
 				B61E2C341A951005000CA1FC /* shield-block.png in Resources */,
 				B61E2C221A951005000CA1FC /* searing-totem.png in Resources */,
 				B61E2C9E1A951005000CA1FC /* unrelenting-rider.png in Resources */,
@@ -2971,7 +3444,10 @@
 				B61E2AA01A951005000CA1FC /* coldlight-seer.png in Resources */,
 				B61E2BE11A951005000CA1FC /* nozdormu.png in Resources */,
 				B61E2CC51A951005000CA1FC /* worgen-infiltrator.png in Resources */,
+				B6A32D3A1ACE75D000EBE480 /* nefarian.png in Resources */,
+				B6A32CF71ACE75D000EBE480 /* brood-afflicition.png in Resources */,
 				B61E2A7E1A951005000CA1FC /* boar.png in Resources */,
+				B6A32CE91ACE75D000EBE480 /* activate-toxitron.png in Resources */,
 				B61E2A381A951005000CA1FC /* aldor-peacekeeper.png in Resources */,
 				B61E2B4E1A951005000CA1FC /* hogger.png in Resources */,
 				B61E2CB51A951005000CA1FC /* warsong-commander.png in Resources */,
@@ -2979,9 +3455,12 @@
 				B61E2C6B1A951005000CA1FC /* steady-shot.png in Resources */,
 				B61E2A5D1A951005000CA1FC /* attack-mode.png in Resources */,
 				B61E2B9A1A951005000CA1FC /* madder-bomber.png in Resources */,
+				B6A32D071ACE75D000EBE480 /* dragon-egg.png in Resources */,
 				B61E2A841A951005000CA1FC /* bouncing-blade.png in Resources */,
 				B61E2A821A951005000CA1FC /* booty-bay-bodyguard.png in Resources */,
 				B61E2CA11A951005000CA1FC /* unstable-ghoul.png in Resources */,
+				B6A32D411ACE75D000EBE480 /* quick-shot.png in Resources */,
+				B6A32D4D1ACE75D000EBE480 /* sonic-breath.png in Resources */,
 				B61E2A4B1A951005000CA1FC /* arcane-explosion.png in Resources */,
 				B61E2C6A1A951005000CA1FC /* starving-buzzard.png in Resources */,
 				B61E2B7F1A951005000CA1FC /* kor-kron-elite.png in Resources */,
@@ -2989,11 +3468,14 @@
 				B61E2B0D1A951005000CA1FC /* force-tank-max.png in Resources */,
 				B61E2B5D1A951005000CA1FC /* ice-barrier.png in Resources */,
 				B61E2A631A951005000CA1FC /* baine-bloodhoof.png in Resources */,
+				B6A32D301ACE75D000EBE480 /* living-bomb.png in Resources */,
 				B61E2A8C1A951005000CA1FC /* captain-s-parrot.png in Resources */,
 				B61E2C171A951005000CA1FC /* salty-dog.png in Resources */,
 				B61E2BCF1A951005000CA1FC /* murloc-warleader.png in Resources */,
 				B61E2A621A951005000CA1FC /* backstab.png in Resources */,
+				B6A32D491ACE75D000EBE480 /* rock-out.png in Resources */,
 				B61E2B401A951005000CA1FC /* harrison-jones.png in Resources */,
+				B6A32D371ACE75D000EBE480 /* moira-bronzebeard.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3011,7 +3493,9 @@
 				B6D35EBB1A9559F800651819 /* LogParser.cpp in Sources */,
 				B6F2A8CE1A96BF7500B305D6 /* Player.cpp in Sources */,
 				B6E17A9B1A7502A80014AB6C /* DeckTrackView.mm in Sources */,
+				B6F469221ABAA2BA004B1F01 /* Slot.m in Sources */,
 				B6A7E16A1AB1698300364147 /* OpponentView.mm in Sources */,
+				B62E0DC61AC52FD400084F35 /* ImageRecognition.cpp in Sources */,
 				B6A7E1621AB15FC200364147 /* OpponentWindow.m in Sources */,
 				B6D35EBA1A9559F800651819 /* Card.cpp in Sources */,
 				B6F2A8BE1A96A63400B305D6 /* Options.m in Sources */,
@@ -3069,9 +3553,16 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -3105,8 +3596,15 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -3116,8 +3614,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/local/include,
+				);
 				INFOPLIST_FILE = HSTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = HSTrackerPro;
 			};
 			name = Debug;
@@ -3127,8 +3632,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/local/include,
+				);
 				INFOPLIST_FILE = HSTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = HSTrackerPro;
 			};
 			name = Release;

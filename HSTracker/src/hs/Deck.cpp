@@ -37,6 +37,7 @@ Deck::Deck()
     : mFile()
     , mFileName()
     , mDeck()
+    , mCardsRemaining(0)
 {
 }
 
@@ -44,6 +45,7 @@ Deck::Deck(const std::string& filename)
     : mFile()
     , mFileName(filename)
     , mDeck()
+    , mCardsRemaining(0)
 {
     mDeck.clear();
     open(filename);
@@ -53,6 +55,7 @@ Deck::Deck(const Deck& rhs)
     : mFile()
     , mFileName(rhs.mFileName)
     , mDeck()
+    , mCardsRemaining(rhs.mCardsRemaining)
 {
     size_t size = mDeck.size();
     for (int i = 0; i < size; i++)
@@ -124,6 +127,8 @@ bool Deck::createDeck(DBCreator& db)
         }
     }
     
+    mCardsRemaining = mDeck.size();
+    
     return true;
 }
     
@@ -142,6 +147,7 @@ void Deck::reset()
     }
     // delete map
     mDeck.clear();
+    mCardsRemaining = 0;
 }
     
 void Deck::reopen()
@@ -164,6 +170,16 @@ bool Deck::decrementCount(const string& id, uint32_t decAmount)
         if (id.compare(card->getCardId()) == 0)
         {
             mDeck[i]->count -= decAmount;
+            
+            if (mCardsRemaining - (int32_t)decAmount >= 0)
+            {
+                mCardsRemaining -= decAmount;
+            }
+            else
+            {
+                mCardsRemaining = 0;
+                LOG_WARN("Cards remaining is incorrect!" << std::endl);
+            }
             return true;
         }
     }
@@ -171,14 +187,15 @@ bool Deck::decrementCount(const string& id, uint32_t decAmount)
     return false;
 }
     
-bool Deck::incrementCount(const std::string& id, uint32_t decAmount)
+bool Deck::incrementCount(const std::string& id, uint32_t incAmount)
 {
     for(int i = 0; i < mDeck.size(); i++)
     {
         Card* card = mDeck[i]->card;
         if (id.compare(card->getCardId()) == 0)
         {
-            mDeck[i]->count += decAmount;
+            mDeck[i]->count += incAmount;
+            mCardsRemaining += incAmount;
             return true;
         }
     }
@@ -218,6 +235,11 @@ uint32_t Deck::getCount(uint32_t pos)
         return false;
     }
     return mDeck[pos]->count;
+}
+    
+uint32_t Deck::getRemaining()
+{
+    return mCardsRemaining;
 }
 
 Card* Deck::getCardById(const string& id)

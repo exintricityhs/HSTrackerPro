@@ -318,6 +318,30 @@ void LogParser::processPowerGame()
         findBracketKeyValues(data, &entryData);
         mGame.moveDeckToHand(entryData["player"], entryData["id"], entryData["cardId"]);
     }
+    else if (mCurrentLine.find("CardID=BRM_019") != string::npos)
+    {
+        const char* searchText = "FULL_ENTITY - Creating ID=";
+        pos = mCurrentLine.find(searchText);
+        
+        if (pos != string::npos)
+        {
+            const int leftPos = pos + 23;
+            
+            PlayData valueData;
+            size_t spacePos = mCurrentLine.find(" ", leftPos);
+            string subEntry = mCurrentLine.substr(leftPos, spacePos);
+            findKeyValues(subEntry, &valueData);
+            
+            if (valueData["ID"].length())
+            {
+                LinkedEntity linkedEntity;
+                linkedEntity.fromCardId = valueData["BRM_019"];
+                linkedEntity.fromId = -1;
+                linkedEntity.toId = valueData["ID"];
+                addLinkedEntity(linkedEntity);
+            }
+        }
+    }
 }
 
 void LogParser::findBracketKeyValues(string data, std::map<std::string, std::string>* playData, bool reverse)

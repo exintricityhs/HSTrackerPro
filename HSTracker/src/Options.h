@@ -25,15 +25,18 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface Options : NSWindowController
+@interface Options : NSObject
 {
-@public
-    int sliderValue;
 }
 
-- (IBAction)slidersMoved:(id)sender;
+- (NSString*)getLastDeckPath;
+- (void)setLastDeckPath:(NSString*) path;
 
-@property IBOutlet NSSlider* alphaSlider;
-@property IBOutlet NSTextField* alphaText;
+- (bool)getLocked;
+- (void)setLocked:(bool)lock;
+
+@property NSString* SelfWindowName;
+@property NSString* OppWindowName;
+
 
 @end

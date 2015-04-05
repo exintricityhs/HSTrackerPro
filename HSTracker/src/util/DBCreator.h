@@ -75,6 +75,11 @@ public:
     std::vector<Card*> findCardWithIdSubstring(const std::string& substr, bool searchId);
 
     void printDatabase();
+    
+    /**
+     * Helper function for new card releases
+     */
+    void convertJson(const std::string& filename);
 
 
 private:
